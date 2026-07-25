@@ -30,23 +30,23 @@ TOPICS = {
         'meta': ('The most useful business and non-fiction books of the past decade — every winner of the '
                  'Most Useful Book award from the Non-Obvious Book Awards, 2014 to today.'),
         'intro': ('Every year since 2014, the Non-Obvious Book Awards have honored one book as the '
-                  '<b>Most Useful Book of the Year</b> &mdash; the book our judges believe delivers the most '
+                  '<b>Most Useful Book of the Year</b>: the book our judges believe delivers the most '
                   'practical, immediately applicable ideas of any book published that year. Collected here for '
                   'the first time: every winner, in one definitive reading list.'),
         'accent': 'teal',
         'badge': 'assets/badges/generic/USEFUL-generic.png',
         'blurbs': {
-            'everybodywrites': 'The book that declared "everyone is a writer now" &mdash; Ann Handley\'s field guide to creating ridiculously good content remains the standard for anyone who writes for business, from emails to entire marketing campaigns.',
-            'tedtalks': 'TED curator Chris Anderson reveals how the world\'s best speakers build talks that spread &mdash; the closest thing there is to an official manual for modern public speaking.',
-            'exactlywhattosay': 'Phil M. Jones distills persuasion into a set of "magic words" &mdash; precise phrases that change how people respond to you in sales conversations, negotiations and everyday influence.',
-            'factfulness': 'Hans Rosling\'s data-driven case that the world is better than you think &mdash; and a training manual for the ten instincts that distort how leaders read the world. Bill Gates called it one of the most important books he\'s ever read.',
-            'writingtopersuade': 'Longtime New York Times op-ed editor Trish Hall spent years deciding which arguments worked. Here she shares what actually changes minds &mdash; and why facts alone never do.',
-            'trueorfalse': 'Former CIA analyst Cindy Otis delivers a practical guide to spotting misinformation and fake news &mdash; a skill that has only become more essential every year since it won.',
+            'everybodywrites': 'The book that declared "everyone is a writer now". Ann Handley\'s field guide to creating ridiculously good content remains the standard for anyone who writes for business, from emails to entire marketing campaigns.',
+            'tedtalks': 'TED curator Chris Anderson reveals how the world\'s best speakers build talks that spread: the closest thing there is to an official manual for modern public speaking.',
+            'exactlywhattosay': 'Phil M. Jones distills persuasion into a set of "magic words": precise phrases that change how people respond to you in sales conversations, negotiations and everyday influence.',
+            'factfulness': 'Hans Rosling\'s data-driven case that the world is better than you think, and a training manual for the ten instincts that distort how leaders read the world. Bill Gates called it one of the most important books he\'s ever read.',
+            'writingtopersuade': 'Longtime New York Times op-ed editor Trish Hall spent years deciding which arguments worked. Here she shares what actually changes minds, and why facts alone never do.',
+            'trueorfalse': 'Former CIA analyst Cindy Otis delivers a practical guide to spotting misinformation and fake news: a skill that has only become more essential every year since it won.',
             'thinkagain': 'Adam Grant\'s blockbuster on the power of rethinking: why the smartest people update their views, and how intellectual humility beats being right. A modern classic of useful thinking.',
-            'thinking101': 'Yale psychologist Woo-kyoung Ahn turns her famous "Thinking" course into a guide to the reasoning errors we all make &mdash; and the research-backed ways to fix them.',
-            'outragemachine': 'Tobias Rose-Stockwell maps how social media turned outrage into a business model &mdash; and gives readers practical tools to resist the machine and communicate better online.',
+            'thinking101': 'Yale psychologist Woo-kyoung Ahn turns her famous "Thinking" course into a guide to the reasoning errors we all make, and the research-backed ways to fix them.',
+            'outragemachine': 'Tobias Rose-Stockwell maps how social media turned outrage into a business model, and gives readers practical tools to resist the machine and communicate better online.',
             'negotiatingwhileblack': 'Damali Peterman delivers sharp, real-world negotiation strategy that acknowledges what most negotiation books ignore: who you are changes the conversation. Useful for every negotiator, essential for many.',
-            'wildcourage': 'Ex-Google executive Jenny Wood reclaims nine "bad" traits &mdash; from weird to selfish &mdash; as the courage skills that actually get you what you want at work and in life.',
+            'wildcourage': 'Ex-Google executive Jenny Wood reclaims nine "bad" traits, from weird to selfish, as the courage skills that actually get you what you want at work and in life.',
         },
     },
     'important': {
@@ -58,23 +58,23 @@ TOPICS = {
         'meta': ('The most important non-fiction and business books of the past decade — every winner of the '
                  'Most Important Book award from the Non-Obvious Book Awards, 2014 to today.'),
         'intro': ('Every year since 2014, the Non-Obvious Book Awards have honored one book as the '
-                  '<b>Most Important Book of the Year</b> &mdash; the book with the biggest ideas about the world '
+                  '<b>Most Important Book of the Year</b>: the book with the biggest ideas about the world '
                   'we live in, and the one our judges believe matters most. Collected here: every winner, in one '
                   'definitive reading list.'),
         'accent': 'purple',
         'badge': 'assets/badges/generic/IMPORTANT-generic.png',
         'blurbs': {
-            'theconfidencecode': 'Journalists Katty Kay and Claire Shipman investigate the science of self-assurance &mdash; and why closing the confidence gap matters as much as competence for women at work.',
-            'persuadable': 'Al Pittampalli makes the counterintuitive case that the willingness to change your mind &mdash; being persuadable &mdash; is a defining strength of modern leadership.',
-            'givework': 'Samasource founder Leila Janah argues the surest way to end global poverty is not charity but work &mdash; and shows how giving work transforms lives and communities.',
-            'bullshitjobs': 'Anthropologist David Graeber names the phenomenon everyone recognized but no one discussed: jobs that even the people doing them believe are meaningless &mdash; and what that does to us.',
+            'theconfidencecode': 'Journalists Katty Kay and Claire Shipman investigate the science of self-assurance, and why closing the confidence gap matters as much as competence for women at work.',
+            'persuadable': 'Al Pittampalli makes the counterintuitive case that the willingness to change your mind, being persuadable, is a defining strength of modern leadership.',
+            'givework': 'Samasource founder Leila Janah argues the surest way to end global poverty is not charity but work, and shows how giving work transforms lives and communities.',
+            'bullshitjobs': 'Anthropologist David Graeber names the phenomenon everyone recognized but no one discussed: jobs that even the people doing them believe are meaningless, and what that does to us.',
             'secondhand': 'Adam Minter follows our castoffs through the hidden global economy of secondhand goods, revealing what really happens to the things we give away.',
             'makechange': 'Activist Shaun King draws on his years at the center of modern movements to lay out how outrage becomes organized, durable change.',
-            'thelonelycentury': 'Economist Noreena Hertz documents how loneliness became a defining condition of our age &mdash; reshaping our health, our economies and our politics &mdash; and what it takes to reconnect.',
-            'stolenfocus': 'Johann Hari investigates why the world stopped paying attention &mdash; and shows that our attention crisis is not a personal failing but something being done to us.',
-            'howbigthingsgetdone': 'Megaproject expert Bent Flyvbjerg distills a lifetime of data on why big projects fail &mdash; and the surprising factors behind the rare ones that succeed. Essential for anyone leading anything ambitious.',
-            'bravenewwords': 'Khan Academy founder Salman Khan offers the most credible early map of how AI will transform how our kids learn &mdash; and why that future is more hopeful than we fear.',
-            'moralambition': 'Rutger Bregman challenges the most talented people of our generation to stop wasting their careers &mdash; and redirect their ambition toward the world\'s biggest problems.',
+            'thelonelycentury': 'Economist Noreena Hertz documents how loneliness became a defining condition of our age, reshaping our health, our economies and our politics, and what it takes to reconnect.',
+            'stolenfocus': 'Johann Hari investigates why the world stopped paying attention, and shows that our attention crisis is not a personal failing but something being done to us.',
+            'howbigthingsgetdone': 'Megaproject expert Bent Flyvbjerg distills a lifetime of data on why big projects fail, and the surprising factors behind the rare ones that succeed. Essential for anyone leading anything ambitious.',
+            'bravenewwords': 'Khan Academy founder Salman Khan offers the most credible early map of how AI will transform how our kids learn, and why that future is more hopeful than we fear.',
+            'moralambition': 'Rutger Bregman challenges the most talented people of our generation to stop wasting their careers, and redirect their ambition toward the world\'s biggest problems.',
         },
     },
     'original': {
@@ -86,23 +86,23 @@ TOPICS = {
         'meta': ('The most original non-fiction books of the past decade — every winner of the Most Original '
                  'Book award from the Non-Obvious Book Awards, 2014 to today.'),
         'intro': ('Every year since 2014, the Non-Obvious Book Awards have honored one book as the '
-                  '<b>Most Original Book of the Year</b> &mdash; the book unlike anything else published that '
+                  '<b>Most Original Book of the Year</b>: the book unlike anything else published that '
                   'year, built on an idea we had simply never seen before. Collected here: every winner, in one '
                   'definitive reading list.'),
         'accent': 'blue',
         'badge': 'assets/badges/generic/ORIGINAL-generic.png',
         'blurbs': {
-            'thedoodlerevolution': 'Sunni Brown makes the serious case for doodling as a thinking tool &mdash; a visual language that unlocks memory, insight and better ideas in even the most buttoned-up workplaces.',
-            'messy': 'Tim Harford argues that disorder &mdash; in our desks, our plans and our lives &mdash; is a creative force, and that our instinct to tidy everything comes at a real cost.',
-            'winbigly': 'Dilbert creator Scott Adams dissects the persuasion techniques that powered one of the most unlikely campaigns in political history &mdash; a provocative field guide to influence in a post-fact world.',
-            'winnerstakeall': 'Anand Giridharadas\'s unsparing look at how the global elite\'s worldchanging efforts often protect the very systems that created the problems &mdash; a book that reframed an entire debate about philanthropy.',
-            'nineliesaboutwork': 'Marcus Buckingham and Ashley Goodall take aim at the workplace\'s most cherished orthodoxies &mdash; from culture to feedback to work-life balance &mdash; and explain what the evidence actually says.',
+            'thedoodlerevolution': 'Sunni Brown makes the serious case for doodling as a thinking tool: a visual language that unlocks memory, insight and better ideas in even the most buttoned-up workplaces.',
+            'messy': 'Tim Harford argues that disorder, in our desks, our plans and our lives, is a creative force, and that our instinct to tidy everything comes at a real cost.',
+            'winbigly': 'Dilbert creator Scott Adams dissects the persuasion techniques that powered one of the most unlikely campaigns in political history: a provocative field guide to influence in a post-fact world.',
+            'winnerstakeall': 'Anand Giridharadas\'s unsparing look at how the global elite\'s worldchanging efforts often protect the very systems that created the problems: a book that reframed an entire debate about philanthropy.',
+            'nineliesaboutwork': 'Marcus Buckingham and Ashley Goodall take aim at the workplace\'s most cherished orthodoxies, from culture to feedback to work-life balance, and explain what the evidence actually says.',
             'thelostfamily': 'Libby Copeland explores how at-home DNA tests are upending identity, exposing family secrets and rewriting what it means to be related.',
-            'whenweceasetounderstandtheworld': 'Benjam\u00edn Labatut\'s genre-defying account of the scientists whose discoveries brushed against madness &mdash; a book that reads like nothing else honored in our awards\' history.',
-            'allthelivingandthedead': 'Hayley Campbell spends time with the people who work with death &mdash; embalmers, executioners, gravediggers &mdash; to ask what their work teaches the rest of us about living.',
-            'pockets': 'Hannah Carlson turns an everyday afterthought into a revelatory cultural history &mdash; who gets pockets, who doesn\'t, and what that says about power, gender and design.',
-            'trashtalk': 'Rafi Kohan explores the art, science and psychology of talking trash &mdash; from locker rooms to boardrooms &mdash; and what verbal combat reveals about competition itself.',
-            'dinnerwithkingtut': 'Sam Kean joins the experimental archaeologists recreating the sounds, smells and tastes of the ancient world &mdash; history you can practically eat.',
+            'whenweceasetounderstandtheworld': 'Benjam\u00edn Labatut\'s genre-defying account of the scientists whose discoveries brushed against madness: a book that reads like nothing else honored in our awards\' history.',
+            'allthelivingandthedead': 'Hayley Campbell spends time with the people who work with death, from embalmers to executioners to gravediggers, to ask what their work teaches the rest of us about living.',
+            'pockets': 'Hannah Carlson turns an everyday afterthought into a revelatory cultural history: who gets pockets, who doesn\'t, and what that says about power, gender and design.',
+            'trashtalk': 'Rafi Kohan explores the art, science and psychology of talking trash, from locker rooms to boardrooms, and what verbal combat reveals about competition itself.',
+            'dinnerwithkingtut': 'Sam Kean joins the experimental archaeologists recreating the sounds, smells and tastes of the ancient world: history you can practically eat.',
         },
     },
     'entertaining': {
@@ -114,22 +114,22 @@ TOPICS = {
         'meta': ('The most entertaining non-fiction books of the past decade — every winner of the Most '
                  'Entertaining Book award from the Non-Obvious Book Awards, 2014 to today.'),
         'intro': ('Every year since 2014, the Non-Obvious Book Awards have honored one book as the '
-                  '<b>Most Entertaining Book of the Year</b> &mdash; proof that non-fiction can be every bit as '
+                  '<b>Most Entertaining Book of the Year</b>: proof that non-fiction can be every bit as '
                   'fun as it is smart. Collected here: every winner, in one definitive reading list.'),
         'accent': 'orange',
         'badge': 'assets/badges/generic/ENTERTAINING-generic.png',
         'blurbs': {
-            'dataclysm': 'OkCupid co-founder Christian Rudder mines millions of data points to reveal who we really are when we think nobody\'s watching &mdash; funny, fascinating and occasionally alarming.',
-            'disrupted': 'Journalist Dan Lyons\'s riotous memoir of going from Newsweek to a tech startup at age 50 &mdash; still one of the funniest and sharpest books ever written about startup culture.',
-            'fiftyinventionsthatshapedthemoderneconomy': 'Tim Harford spins the stories of fifty unlikely inventions &mdash; from barbed wire to the barcode &mdash; that quietly built the modern economy.',
-            'theformula': 'Network scientist Albert-L\u00e1szl\u00f3 Barab\u00e1si reveals the universal laws behind success &mdash; and why performance alone is never enough.',
-            'junior': 'Thomas Kemeny\'s irreverent, genuinely useful guide to surviving and thriving in advertising &mdash; career advice that reads like entertainment.',
+            'dataclysm': 'OkCupid co-founder Christian Rudder mines millions of data points to reveal who we really are when we think nobody\'s watching: funny, fascinating and occasionally alarming.',
+            'disrupted': 'Journalist Dan Lyons\'s riotous memoir of going from Newsweek to a tech startup at age 50: still one of the funniest and sharpest books ever written about startup culture.',
+            'fiftyinventionsthatshapedthemoderneconomy': 'Tim Harford spins the stories of fifty unlikely inventions, from barbed wire to the barcode, that quietly built the modern economy.',
+            'theformula': 'Network scientist Albert-L\u00e1szl\u00f3 Barab\u00e1si reveals the universal laws behind success, and why performance alone is never enough.',
+            'junior': 'Thomas Kemeny\'s irreverent, genuinely useful guide to surviving and thriving in advertising: career advice that reads like entertainment.',
             'lurking': 'Joanne McNeil tells the history of the internet from the perspective that matters most and gets written about least: the user\'s.',
-            'fourlostcities': 'Annalee Newitz tours four vanished metropolises &mdash; from \u00c7atalh\u00f6y\u00fck to Cahokia &mdash; to uncover why cities die and what our own urban future can learn from theirs.',
+            'fourlostcities': 'Annalee Newitz tours four vanished metropolises, from \u00c7atalh\u00f6y\u00fck to Cahokia, to uncover why cities die and what our own urban future can learn from theirs.',
             'atlasoftheinvisible': 'James Cheshire and Oliver Uberti turn overlooked data into breathtaking maps and graphics that make the invisible patterns of our world impossible to unsee.',
             'thetheoryofeverythingelse': 'From the co-host of No Such Thing As A Fish, a joyful tour of the world\'s weirdest theories and the brilliant eccentrics who believed them.',
-            'stickynotes': 'Teacher Matthew Eicheldinger\'s collection of funny, tender true stories from the classroom &mdash; the book behind the beloved viral videos.',
-            'thefutureofstorytelling': 'Charles Melcher charts how stories are evolving beyond the page and screen &mdash; into immersive, interactive experiences that are rewriting the storyteller\'s craft.',
+            'stickynotes': 'Teacher Matthew Eicheldinger\'s collection of funny, tender true stories from the classroom: the book behind the beloved viral videos.',
+            'thefutureofstorytelling': 'Charles Melcher charts how stories are evolving beyond the page and screen into immersive, interactive experiences that are rewriting the storyteller\'s craft.',
         },
     },
     'shareable': {
@@ -141,22 +141,22 @@ TOPICS = {
         'meta': ('The most shareable non-fiction books of the past decade — every winner of the Most Shareable '
                  'Book award from the Non-Obvious Book Awards, 2014 to today.'),
         'intro': ('Every year since 2014, the Non-Obvious Book Awards have honored one book as the '
-                  '<b>Most Shareable Book of the Year</b> &mdash; the book you finish and immediately have to '
+                  '<b>Most Shareable Book of the Year</b>: the book you finish and immediately have to '
                   'tell everyone about. Collected here: every winner, in one definitive reading list.'),
         'accent': 'magenta',
         'badge': 'assets/badges/generic/SHAREABLE-generic.png',
         'blurbs': {
-            'howtheworldseesyou': 'Sally Hogshead flips personal branding on its head: forget how you see the world &mdash; discover how the world sees you, and lead with what makes you fascinating.',
-            'smalldata': 'Brand detective Martin Lindstrom shows how tiny human clues &mdash; a worn sneaker, a fridge magnet &mdash; reveal desires that big data completely misses.',
+            'howtheworldseesyou': 'Sally Hogshead flips personal branding on its head: forget how you see the world. discover how the world sees you, and lead with what makes you fascinating.',
+            'smalldata': 'Brand detective Martin Lindstrom shows how tiny human clues, like a worn sneaker or a fridge magnet, reveal desires that big data completely misses.',
             'hitrefresh': 'Satya Nadella\'s inside account of transforming Microsoft by putting empathy at the center of one of the world\'s most powerful companies.',
-            'rebeltalent': 'Harvard\'s Francesca Gino makes the research-backed case that the most valuable people at work are the ones who break the rules &mdash; constructively.',
+            'rebeltalent': 'Harvard\'s Francesca Gino makes the research-backed case that the most valuable people at work are the ones who break the rules: constructively.',
             'latebloomers': 'Rich Karlgaard pushes back on our obsession with early achievement and celebrates the quiet power of blooming on your own schedule.',
-            'humankind': 'Rutger Bregman\'s hopeful history argues that most people, most of the time, are fundamentally decent &mdash; and that believing it changes everything.',
-            'move': 'Parag Khanna maps the forces &mdash; climate, economics, demographics &mdash; that will make the next decades the most mobile in human history, and where we\'ll all go.',
+            'humankind': 'Rutger Bregman\'s hopeful history argues that most people, most of the time, are fundamentally decent, and that believing it changes everything.',
+            'move': 'Parag Khanna maps the forces, climate, economics, demographics, that will make the next decades the most mobile in human history, and where we\'ll all go.',
             'quit': 'Poker champion Annie Duke dismantles our worship of grit and teaches the most undervalued skill in business and life: knowing when to walk away.',
-            'yourbrainonart': 'Susan Magsamen and Ivy Ross share the new science of neuroaesthetics &mdash; how making and experiencing art measurably transforms our brains, bodies and lives.',
-            'supercommunicators': 'Charles Duhigg decodes the secret language of connection &mdash; and shows how anyone can learn the skills that make conversations actually work.',
-            'carelesspeople': 'Sarah Wynn-Williams\'s explosive insider memoir of life among Facebook\'s leadership &mdash; the book everyone in tech spent the year talking about.',
+            'yourbrainonart': 'Susan Magsamen and Ivy Ross share the new science of neuroaesthetics: how making and experiencing art measurably transforms our brains, bodies and lives.',
+            'supercommunicators': 'Charles Duhigg decodes the secret language of connection, and shows how anyone can learn the skills that make conversations actually work.',
+            'carelesspeople': 'Sarah Wynn-Williams\'s explosive insider memoir of life among Facebook\'s leadership: the book everyone in tech spent the year talking about.',
         },
     },
 }
@@ -271,6 +271,11 @@ def build(topic_key):
   .ru-btn.pod:hover{background:var(--yellow);}
   @media(max-width:860px){.topic-hero-inner{grid-template-columns:1fr;}.topic-hero .hero-stamp{display:none;}}
   @media(max-width:640px){.ru-row{grid-template-columns:1fr;gap:24px;}.ru-cover img{max-width:200px;}}
+  @media(max-width:560px){
+    .topic-hero{padding:52px 20px 46px;}
+    .ru-row{padding:30px 0;gap:16px;}
+    .ru-cover img{max-width:120px;}
+  }
 """
 
     rows = []

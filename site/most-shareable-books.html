@@ -286,11 +286,37 @@
     nav .nav-inner{position:relative;}
   }
   @media(max-width:560px){
-    section{padding:60px 22px;}
-    .cat-grid{grid-template-columns:repeat(2,1fr);}
+    section{padding:44px 20px;}
+    .cat-grid{grid-template-columns:repeat(2,1fr);gap:22px;margin-top:36px;row-gap:34px;}
     .win-grid{grid-template-columns:1fr;}
-    .year-grid{grid-template-columns:repeat(2,1fr);}
-    .foot-inner{grid-template-columns:1fr;}
+    .year-grid{grid-template-columns:repeat(2,1fr);margin-top:32px;gap:16px;}
+    .foot-inner{grid-template-columns:1fr;gap:32px;padding-bottom:40px;}
+    .hero{padding:56px 20px 50px;}
+    .hero-inner{gap:26px;}
+    .hero .divider{margin-bottom:20px;}
+    .hero-stamp svg{width:118px;}
+    .divider{margin-bottom:16px;height:6px;}
+    .kicker{margin-bottom:10px;}
+    h2{margin-bottom:14px;}
+    .lede{font-size:1.06rem;line-height:1.65;}
+    .stats-grid{gap:16px;}
+    .how-grid{gap:26px;margin-top:34px;}
+    .winners-head{margin-bottom:28px;}
+    .win-year-head{margin:30px 0 18px;}
+    .video-frame{margin:28px auto 0;}
+    .fw-inner{padding:52px 20px;gap:26px;}
+    .fw-cover{margin-top:22px;}
+    .fw-cover img{max-width:210px;}
+    .pod-inner{gap:32px;}
+    .enter-inner{gap:34px;}
+    .enter-photo{margin-top:24px;height:220px;}
+    .roundups{margin-top:38px;padding-top:26px;}
+    .news{padding:56px 20px;}
+    .news-btn{margin-top:24px;}
+    .news h2{margin:14px 0 18px;}
+    .news-bulb{width:72px;margin-bottom:12px;}
+    footer{padding:44px 20px 0;}
+    .photo-band{height:38vh;}
   }
 </style>
 <style>
@@ -323,6 +349,11 @@
   .ru-btn.pod:hover{background:var(--yellow);}
   @media(max-width:860px){.topic-hero-inner{grid-template-columns:1fr;}.topic-hero .hero-stamp{display:none;}}
   @media(max-width:640px){.ru-row{grid-template-columns:1fr;gap:24px;}.ru-cover img{max-width:200px;}}
+  @media(max-width:560px){
+    .topic-hero{padding:52px 20px 46px;}
+    .ru-row{padding:30px 0;gap:16px;}
+    .ru-cover img{max-width:120px;}
+  }
 </style>
 </head>
 <body>
@@ -350,8 +381,8 @@
     </a>
     <ul class="nav-links">
       <li><a href="about.html">About</a></li>
-      <li><a href="index.html#archive">Past Winners</a></li>
-        <li><a href="index.html#roundups">Best Books</a></li>
+      <li><a href="past-winners.html">Past Winners</a></li>
+        <li><a href="best-books.html">Best Books</a></li>
       <li><a href="podcast.html">Podcast</a></li>
       <li><a href="faq.html">FAQ</a></li>
       <li><a href="enter.html" class="nav-cta">Enter the 2026 Awards</a></li>
@@ -367,7 +398,7 @@
       <div class="divider"></div>
       <p class="kicker">Award Winner Roundups</p>
       <h1>The Most Shareable<br>Non-Fiction Books<br>Of The Past Decade</h1>
-      <p class="sub">Every year since 2014, the Non-Obvious Book Awards have honored one book as the <b>Most Shareable Book of the Year</b> &mdash; the book you finish and immediately have to tell everyone about. Collected here: every winner, in one definitive reading list.</p>
+      <p class="sub">Every year since 2014, the Non-Obvious Book Awards have honored one book as the <b>Most Shareable Book of the Year</b>: the book you finish and immediately have to tell everyone about. Collected here: every winner, in one definitive reading list.</p>
       <p class="hero-disclaimer">*This list does not include books published in 2026, which are currently under review as part of our 2026 awards program.</p>
     </div>
     <div class="hero-stamp">
@@ -387,7 +418,7 @@
           <span class="ru-year">2025 &middot; Most Shareable Winner</span>
           <h3>Careless People</h3>
           <p class="auth">by Sarah Wynn-Williams</p>
-          <p class="blurb">Sarah Wynn-Williams's explosive insider memoir of life among Facebook's leadership &mdash; the book everyone in tech spent the year talking about.</p>
+          <p class="blurb">Sarah Wynn-Williams's explosive insider memoir of life among Facebook's leadership: the book everyone in tech spent the year talking about.</p>
           <div class="ru-links"><a class="ru-btn amz" href="https://www.amazon.com/dp/1250391237/?tag=influenmarket-20" target="_blank" rel="noopener sponsored">Buy Amazon</a><a class="ru-btn local" href="https://bookshop.org/a/8476/9781250391230" target="_blank" rel="noopener sponsored">Buy Local</a><a class="ru-btn ghost" href="2025.html">All 2025 Winners &#8594;</a></div>
         </div>
       </div>
@@ -397,7 +428,7 @@
           <span class="ru-year">2024 &middot; Most Shareable Winner</span>
           <h3>Supercommunicators</h3>
           <p class="auth">by Charles Duhigg</p>
-          <p class="blurb">Charles Duhigg decodes the secret language of connection &mdash; and shows how anyone can learn the skills that make conversations actually work.</p>
+          <p class="blurb">Charles Duhigg decodes the secret language of connection, and shows how anyone can learn the skills that make conversations actually work.</p>
           <div class="ru-links"><a class="ru-btn amz" href="https://www.amazon.com/dp/0593243927/?tag=influenmarket-20" target="_blank" rel="noopener sponsored">Buy Amazon</a><a class="ru-btn local" href="https://bookshop.org/a/8476/9780593243923" target="_blank" rel="noopener sponsored">Buy Local</a><a class="ru-btn pod" href="https://www.nonobvious.com/podcast" target="_blank" rel="noopener">Listen To Episode</a><a class="ru-btn ghost" href="2024.html">All 2024 Winners &#8594;</a></div>
         </div>
       </div>
@@ -407,7 +438,7 @@
           <span class="ru-year">2023 &middot; Most Shareable Winner</span>
           <h3>Your Brain on Art</h3>
           <p class="auth">by Susan Magsamen and Ivy Ross</p>
-          <p class="blurb">Susan Magsamen and Ivy Ross share the new science of neuroaesthetics &mdash; how making and experiencing art measurably transforms our brains, bodies and lives.</p>
+          <p class="blurb">Susan Magsamen and Ivy Ross share the new science of neuroaesthetics: how making and experiencing art measurably transforms our brains, bodies and lives.</p>
           <div class="ru-links"><a class="ru-btn amz" href="https://www.amazon.com/dp/059344924X/?tag=influenmarket-20" target="_blank" rel="noopener sponsored">Buy Amazon</a><a class="ru-btn local" href="https://bookshop.org/a/8476/9780593449240" target="_blank" rel="noopener sponsored">Buy Local</a><a class="ru-btn ghost" href="2023.html">All 2023 Winners &#8594;</a></div>
         </div>
       </div>
@@ -427,7 +458,7 @@
           <span class="ru-year">2021 &middot; Most Shareable Winner</span>
           <h3>Move</h3>
           <p class="auth">by Parag Khanna</p>
-          <p class="blurb">Parag Khanna maps the forces &mdash; climate, economics, demographics &mdash; that will make the next decades the most mobile in human history, and where we'll all go.</p>
+          <p class="blurb">Parag Khanna maps the forces, climate, economics, demographics, that will make the next decades the most mobile in human history, and where we'll all go.</p>
           <div class="ru-links"><a class="ru-btn amz" href="https://www.amazon.com/dp/1982168986/?tag=influenmarket-20" target="_blank" rel="noopener sponsored">Buy Amazon</a><a class="ru-btn local" href="https://bookshop.org/a/8476/9781982168988" target="_blank" rel="noopener sponsored">Buy Local</a><a class="ru-btn pod" href="https://www.nonobvious.com/podcast" target="_blank" rel="noopener">Listen To Episode</a><a class="ru-btn ghost" href="2021.html">All 2021 Winners &#8594;</a></div>
         </div>
       </div>
@@ -437,7 +468,7 @@
           <span class="ru-year">2020 &middot; Most Shareable Winner</span>
           <h3>Humankind</h3>
           <p class="auth">by Rutger Bregman</p>
-          <p class="blurb">Rutger Bregman's hopeful history argues that most people, most of the time, are fundamentally decent &mdash; and that believing it changes everything.</p>
+          <p class="blurb">Rutger Bregman's hopeful history argues that most people, most of the time, are fundamentally decent, and that believing it changes everything.</p>
           <div class="ru-links"><a class="ru-btn amz" href="https://www.amazon.com/dp/0316418528/?tag=influenmarket-20" target="_blank" rel="noopener sponsored">Buy Amazon</a><a class="ru-btn local" href="https://bookshop.org/a/8476/9780316418522" target="_blank" rel="noopener sponsored">Buy Local</a><a class="ru-btn ghost" href="2020.html">All 2020 Winners &#8594;</a></div>
         </div>
       </div>
@@ -457,7 +488,7 @@
           <span class="ru-year">2018 &middot; Most Shareable Winner</span>
           <h3>Rebel Talent</h3>
           <p class="auth">by Francesca Gino</p>
-          <p class="blurb">Harvard's Francesca Gino makes the research-backed case that the most valuable people at work are the ones who break the rules &mdash; constructively.</p>
+          <p class="blurb">Harvard's Francesca Gino makes the research-backed case that the most valuable people at work are the ones who break the rules: constructively.</p>
           <div class="ru-links"><a class="ru-btn amz" href="https://www.amazon.com/dp/0062694634/?tag=influenmarket-20" target="_blank" rel="noopener sponsored">Buy Amazon</a><a class="ru-btn local" href="https://bookshop.org/a/8476/9780062694638" target="_blank" rel="noopener sponsored">Buy Local</a><a class="ru-btn ghost" href="2018.html">All 2018 Winners &#8594;</a></div>
         </div>
       </div>
@@ -477,7 +508,7 @@
           <span class="ru-year">2016 &middot; Most Shareable Winner</span>
           <h3>Small Data</h3>
           <p class="auth">by Martin Lindstrom</p>
-          <p class="blurb">Brand detective Martin Lindstrom shows how tiny human clues &mdash; a worn sneaker, a fridge magnet &mdash; reveal desires that big data completely misses.</p>
+          <p class="blurb">Brand detective Martin Lindstrom shows how tiny human clues, like a worn sneaker or a fridge magnet, reveal desires that big data completely misses.</p>
           <div class="ru-links"><a class="ru-btn amz" href="https://www.amazon.com/dp/1250118018/?tag=influenmarket-20" target="_blank" rel="noopener sponsored">Buy Amazon</a><a class="ru-btn local" href="https://bookshop.org/a/8476/9781250118011" target="_blank" rel="noopener sponsored">Buy Local</a><a class="ru-btn pod" href="https://www.nonobvious.com/podcast" target="_blank" rel="noopener">Listen To Episode</a><a class="ru-btn ghost" href="2016.html">All 2016 Winners &#8594;</a></div>
         </div>
       </div>
@@ -487,7 +518,7 @@
           <span class="ru-year">2014/15 &middot; Most Shareable Winner</span>
           <h3>How The World Sees You</h3>
           <p class="auth">by Sally Hogshead</p>
-          <p class="blurb">Sally Hogshead flips personal branding on its head: forget how you see the world &mdash; discover how the world sees you, and lead with what makes you fascinating.</p>
+          <p class="blurb">Sally Hogshead flips personal branding on its head: forget how you see the world. discover how the world sees you, and lead with what makes you fascinating.</p>
           <div class="ru-links"><a class="ru-btn amz" href="https://www.amazon.com/dp/0062230697/?tag=influenmarket-20" target="_blank" rel="noopener sponsored">Buy Amazon</a><a class="ru-btn local" href="https://bookshop.org/a/8476/9780062230690" target="_blank" rel="noopener sponsored">Buy Local</a><a class="ru-btn ghost" href="2014.html">All 2014/15 Winners &#8594;</a></div>
         </div>
       </div>
@@ -537,8 +568,8 @@
       <ul>
         <li><a href="about.html">About the Awards</a></li>
         <li><a href="enter.html">How to Enter</a></li>
-        <li><a href="index.html#archive">Past Winners</a></li>
-        <li><a href="index.html#roundups">Best Books Roundups</a></li>
+        <li><a href="past-winners.html">Past Winners</a></li>
+        <li><a href="best-books.html">Best Books Roundups</a></li>
         <li><a href="faq.html">FAQ</a></li>
         <li><a href="podcast.html">Podcast</a></li>
       </ul>
@@ -548,9 +579,9 @@
       <ul>
         <li><a href="https://www.nonobvious.com" target="_blank">Non-Obvious Company</a></li>
         <li><a href="https://www.nonobvious.com/subscribe" target="_blank">Newsletter</a></li>
-        <li><a href="#">YouTube</a></li>
-        <li><a href="#">LinkedIn</a></li>
-        <li><a href="#">Instagram</a></li>
+        <li><a href="https://www.youtube.com/@rohitbhargava" target="_blank">YouTube</a></li>
+        <li><a href="https://www.linkedin.com/in/rohitbhargava/" target="_blank">LinkedIn</a></li>
+        <li><a href="https://www.instagram.com/rohitbb/" target="_blank">Instagram</a></li>
       </ul>
     </div>
   </div>

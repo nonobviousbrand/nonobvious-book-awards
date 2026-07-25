@@ -286,11 +286,37 @@
     nav .nav-inner{position:relative;}
   }
   @media(max-width:560px){
-    section{padding:60px 22px;}
-    .cat-grid{grid-template-columns:repeat(2,1fr);}
+    section{padding:44px 20px;}
+    .cat-grid{grid-template-columns:repeat(2,1fr);gap:22px;margin-top:36px;row-gap:34px;}
     .win-grid{grid-template-columns:1fr;}
-    .year-grid{grid-template-columns:repeat(2,1fr);}
-    .foot-inner{grid-template-columns:1fr;}
+    .year-grid{grid-template-columns:repeat(2,1fr);margin-top:32px;gap:16px;}
+    .foot-inner{grid-template-columns:1fr;gap:32px;padding-bottom:40px;}
+    .hero{padding:56px 20px 50px;}
+    .hero-inner{gap:26px;}
+    .hero .divider{margin-bottom:20px;}
+    .hero-stamp svg{width:118px;}
+    .divider{margin-bottom:16px;height:6px;}
+    .kicker{margin-bottom:10px;}
+    h2{margin-bottom:14px;}
+    .lede{font-size:1.06rem;line-height:1.65;}
+    .stats-grid{gap:16px;}
+    .how-grid{gap:26px;margin-top:34px;}
+    .winners-head{margin-bottom:28px;}
+    .win-year-head{margin:30px 0 18px;}
+    .video-frame{margin:28px auto 0;}
+    .fw-inner{padding:52px 20px;gap:26px;}
+    .fw-cover{margin-top:22px;}
+    .fw-cover img{max-width:210px;}
+    .pod-inner{gap:32px;}
+    .enter-inner{gap:34px;}
+    .enter-photo{margin-top:24px;height:220px;}
+    .roundups{margin-top:38px;padding-top:26px;}
+    .news{padding:56px 20px;}
+    .news-btn{margin-top:24px;}
+    .news h2{margin:14px 0 18px;}
+    .news-bulb{width:72px;margin-bottom:12px;}
+    footer{padding:44px 20px 0;}
+    .photo-band{height:38vh;}
   }
 </style>
 <style>
@@ -323,6 +349,11 @@
   .ru-btn.pod:hover{background:var(--yellow);}
   @media(max-width:860px){.topic-hero-inner{grid-template-columns:1fr;}.topic-hero .hero-stamp{display:none;}}
   @media(max-width:640px){.ru-row{grid-template-columns:1fr;gap:24px;}.ru-cover img{max-width:200px;}}
+  @media(max-width:560px){
+    .topic-hero{padding:52px 20px 46px;}
+    .ru-row{padding:30px 0;gap:16px;}
+    .ru-cover img{max-width:120px;}
+  }
 </style>
 </head>
 <body>
@@ -350,8 +381,8 @@
     </a>
     <ul class="nav-links">
       <li><a href="about.html">About</a></li>
-      <li><a href="index.html#archive">Past Winners</a></li>
-        <li><a href="index.html#roundups">Best Books</a></li>
+      <li><a href="past-winners.html">Past Winners</a></li>
+        <li><a href="best-books.html">Best Books</a></li>
       <li><a href="podcast.html">Podcast</a></li>
       <li><a href="faq.html">FAQ</a></li>
       <li><a href="enter.html" class="nav-cta">Enter the 2026 Awards</a></li>
@@ -367,7 +398,7 @@
       <div class="divider"></div>
       <p class="kicker">Award Winner Roundups</p>
       <h1>The Most Entertaining<br>Non-Fiction Books<br>Of The Past Decade</h1>
-      <p class="sub">Every year since 2014, the Non-Obvious Book Awards have honored one book as the <b>Most Entertaining Book of the Year</b> &mdash; proof that non-fiction can be every bit as fun as it is smart. Collected here: every winner, in one definitive reading list.</p>
+      <p class="sub">Every year since 2014, the Non-Obvious Book Awards have honored one book as the <b>Most Entertaining Book of the Year</b>: proof that non-fiction can be every bit as fun as it is smart. Collected here: every winner, in one definitive reading list.</p>
       <p class="hero-disclaimer">*This list does not include books published in 2026, which are currently under review as part of our 2026 awards program.</p>
     </div>
     <div class="hero-stamp">
@@ -387,7 +418,7 @@
           <span class="ru-year">2025 &middot; Most Entertaining Winner</span>
           <h3>The Future of Storytelling</h3>
           <p class="auth">by Charles Melcher</p>
-          <p class="blurb">Charles Melcher charts how stories are evolving beyond the page and screen &mdash; into immersive, interactive experiences that are rewriting the storyteller's craft.</p>
+          <p class="blurb">Charles Melcher charts how stories are evolving beyond the page and screen into immersive, interactive experiences that are rewriting the storyteller's craft.</p>
           <div class="ru-links"><a class="ru-btn amz" href="https://www.amazon.com/dp/1648293832/?tag=influenmarket-20" target="_blank" rel="noopener sponsored">Buy Amazon</a><a class="ru-btn local" href="https://bookshop.org/a/8476/9781648293832" target="_blank" rel="noopener sponsored">Buy Local</a><a class="ru-btn pod" href="https://www.nonobvious.com/podcast" target="_blank" rel="noopener">Listen To Episode</a><a class="ru-btn ghost" href="2025.html">All 2025 Winners &#8594;</a></div>
         </div>
       </div>
@@ -397,7 +428,7 @@
           <span class="ru-year">2024 &middot; Most Entertaining Winner</span>
           <h3>Sticky Notes</h3>
           <p class="auth">by Matthew Eicheldinger</p>
-          <p class="blurb">Teacher Matthew Eicheldinger's collection of funny, tender true stories from the classroom &mdash; the book behind the beloved viral videos.</p>
+          <p class="blurb">Teacher Matthew Eicheldinger's collection of funny, tender true stories from the classroom: the book behind the beloved viral videos.</p>
           <div class="ru-links"><a class="ru-btn amz" href="https://www.amazon.com/dp/1524894354/?tag=influenmarket-20" target="_blank" rel="noopener sponsored">Buy Amazon</a><a class="ru-btn local" href="https://bookshop.org/a/8476/9781524894351" target="_blank" rel="noopener sponsored">Buy Local</a><a class="ru-btn ghost" href="2024.html">All 2024 Winners &#8594;</a></div>
         </div>
       </div>
@@ -427,7 +458,7 @@
           <span class="ru-year">2021 &middot; Most Entertaining Winner</span>
           <h3>Four Lost Cities</h3>
           <p class="auth">by Annalee Newitz</p>
-          <p class="blurb">Annalee Newitz tours four vanished metropolises &mdash; from Çatalhöyük to Cahokia &mdash; to uncover why cities die and what our own urban future can learn from theirs.</p>
+          <p class="blurb">Annalee Newitz tours four vanished metropolises, from Çatalhöyük to Cahokia, to uncover why cities die and what our own urban future can learn from theirs.</p>
           <div class="ru-links"><a class="ru-btn amz" href="https://www.amazon.com/dp/0393882454/?tag=influenmarket-20" target="_blank" rel="noopener sponsored">Buy Amazon</a><a class="ru-btn local" href="https://bookshop.org/a/8476/9780393882452" target="_blank" rel="noopener sponsored">Buy Local</a><a class="ru-btn ghost" href="2021.html">All 2021 Winners &#8594;</a></div>
         </div>
       </div>
@@ -447,7 +478,7 @@
           <span class="ru-year">2019 &middot; Most Entertaining Winner</span>
           <h3>Junior</h3>
           <p class="auth">by Thomas Kemeny</p>
-          <p class="blurb">Thomas Kemeny's irreverent, genuinely useful guide to surviving and thriving in advertising &mdash; career advice that reads like entertainment.</p>
+          <p class="blurb">Thomas Kemeny's irreverent, genuinely useful guide to surviving and thriving in advertising: career advice that reads like entertainment.</p>
           <div class="ru-links"><a class="ru-btn amz" href="https://www.amazon.com/dp/1576879127/?tag=influenmarket-20" target="_blank" rel="noopener sponsored">Buy Amazon</a><a class="ru-btn local" href="https://bookshop.org/a/8476/9781576879122" target="_blank" rel="noopener sponsored">Buy Local</a><a class="ru-btn ghost" href="2019.html">All 2019 Winners &#8594;</a></div>
         </div>
       </div>
@@ -457,7 +488,7 @@
           <span class="ru-year">2018 &middot; Most Entertaining Winner</span>
           <h3>The Formula</h3>
           <p class="auth">by Albert-László Barabási</p>
-          <p class="blurb">Network scientist Albert-László Barabási reveals the universal laws behind success &mdash; and why performance alone is never enough.</p>
+          <p class="blurb">Network scientist Albert-László Barabási reveals the universal laws behind success, and why performance alone is never enough.</p>
           <div class="ru-links"><a class="ru-btn amz" href="https://www.amazon.com/dp/0316505498/?tag=influenmarket-20" target="_blank" rel="noopener sponsored">Buy Amazon</a><a class="ru-btn local" href="https://bookshop.org/a/8476/9780316505499" target="_blank" rel="noopener sponsored">Buy Local</a><a class="ru-btn ghost" href="2018.html">All 2018 Winners &#8594;</a></div>
         </div>
       </div>
@@ -467,7 +498,7 @@
           <span class="ru-year">2017 &middot; Most Entertaining Winner</span>
           <h3>Fifty Inventions That Shaped the Modern Economy</h3>
           <p class="auth">by Tim Harford</p>
-          <p class="blurb">Tim Harford spins the stories of fifty unlikely inventions &mdash; from barbed wire to the barcode &mdash; that quietly built the modern economy.</p>
+          <p class="blurb">Tim Harford spins the stories of fifty unlikely inventions, from barbed wire to the barcode, that quietly built the modern economy.</p>
           <div class="ru-links"><a class="ru-btn amz" href="https://www.amazon.com/dp/0735216142/?tag=influenmarket-20" target="_blank" rel="noopener sponsored">Buy Amazon</a><a class="ru-btn local" href="https://bookshop.org/a/8476/9780735216143" target="_blank" rel="noopener sponsored">Buy Local</a><a class="ru-btn ghost" href="2017.html">All 2017 Winners &#8594;</a></div>
         </div>
       </div>
@@ -477,7 +508,7 @@
           <span class="ru-year">2016 &middot; Most Entertaining Winner</span>
           <h3>Disrupted</h3>
           <p class="auth">by Dan Lyons</p>
-          <p class="blurb">Journalist Dan Lyons's riotous memoir of going from Newsweek to a tech startup at age 50 &mdash; still one of the funniest and sharpest books ever written about startup culture.</p>
+          <p class="blurb">Journalist Dan Lyons's riotous memoir of going from Newsweek to a tech startup at age 50: still one of the funniest and sharpest books ever written about startup culture.</p>
           <div class="ru-links"><a class="ru-btn amz" href="https://www.amazon.com/dp/0316306088/?tag=influenmarket-20" target="_blank" rel="noopener sponsored">Buy Amazon</a><a class="ru-btn local" href="https://bookshop.org/a/8476/9780316306089" target="_blank" rel="noopener sponsored">Buy Local</a><a class="ru-btn ghost" href="2016.html">All 2016 Winners &#8594;</a></div>
         </div>
       </div>
@@ -487,7 +518,7 @@
           <span class="ru-year">2014/15 &middot; Most Entertaining Winner</span>
           <h3>Dataclysm</h3>
           <p class="auth">by Christian Rudder</p>
-          <p class="blurb">OkCupid co-founder Christian Rudder mines millions of data points to reveal who we really are when we think nobody's watching &mdash; funny, fascinating and occasionally alarming.</p>
+          <p class="blurb">OkCupid co-founder Christian Rudder mines millions of data points to reveal who we really are when we think nobody's watching: funny, fascinating and occasionally alarming.</p>
           <div class="ru-links"><a class="ru-btn amz" href="https://www.amazon.com/dp/0385347391/?tag=influenmarket-20" target="_blank" rel="noopener sponsored">Buy Amazon</a><a class="ru-btn local" href="https://bookshop.org/a/8476/9780385347396" target="_blank" rel="noopener sponsored">Buy Local</a><a class="ru-btn ghost" href="2014.html">All 2014/15 Winners &#8594;</a></div>
         </div>
       </div>
@@ -537,8 +568,8 @@
       <ul>
         <li><a href="about.html">About the Awards</a></li>
         <li><a href="enter.html">How to Enter</a></li>
-        <li><a href="index.html#archive">Past Winners</a></li>
-        <li><a href="index.html#roundups">Best Books Roundups</a></li>
+        <li><a href="past-winners.html">Past Winners</a></li>
+        <li><a href="best-books.html">Best Books Roundups</a></li>
         <li><a href="faq.html">FAQ</a></li>
         <li><a href="podcast.html">Podcast</a></li>
       </ul>
@@ -548,9 +579,9 @@
       <ul>
         <li><a href="https://www.nonobvious.com" target="_blank">Non-Obvious Company</a></li>
         <li><a href="https://www.nonobvious.com/subscribe" target="_blank">Newsletter</a></li>
-        <li><a href="#">YouTube</a></li>
-        <li><a href="#">LinkedIn</a></li>
-        <li><a href="#">Instagram</a></li>
+        <li><a href="https://www.youtube.com/@rohitbhargava" target="_blank">YouTube</a></li>
+        <li><a href="https://www.linkedin.com/in/rohitbhargava/" target="_blank">LinkedIn</a></li>
+        <li><a href="https://www.instagram.com/rohitbb/" target="_blank">Instagram</a></li>
       </ul>
     </div>
   </div>

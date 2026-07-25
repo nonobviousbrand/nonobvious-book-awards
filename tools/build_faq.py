@@ -75,6 +75,7 @@ faq_html = '\n'.join(items)
 extra_css = """
   /* ---------- FAQ page ---------- */
   .faq-hero{background:var(--yellow);padding:150px 6vw 90px;}
+  @media(max-width:560px){.faq-hero{padding:52px 20px 46px;}}
   .faq-hero-inner{max-width:1140px;margin:0 auto;display:grid;grid-template-columns:1.4fr .6fr;gap:60px;align-items:center;}
   .faq-hero h1{font-size:clamp(2.4rem,5vw,4rem);line-height:1.04;text-transform:uppercase;letter-spacing:.02em;font-weight:900;}
   .faq-hero .sub{font-family:var(--serif);font-style:italic;font-size:1.15rem;line-height:1.65;margin-top:22px;max-width:560px;color:#222;}

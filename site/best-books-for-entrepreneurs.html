@@ -286,11 +286,37 @@
     nav .nav-inner{position:relative;}
   }
   @media(max-width:560px){
-    section{padding:60px 22px;}
-    .cat-grid{grid-template-columns:repeat(2,1fr);}
+    section{padding:44px 20px;}
+    .cat-grid{grid-template-columns:repeat(2,1fr);gap:22px;margin-top:36px;row-gap:34px;}
     .win-grid{grid-template-columns:1fr;}
-    .year-grid{grid-template-columns:repeat(2,1fr);}
-    .foot-inner{grid-template-columns:1fr;}
+    .year-grid{grid-template-columns:repeat(2,1fr);margin-top:32px;gap:16px;}
+    .foot-inner{grid-template-columns:1fr;gap:32px;padding-bottom:40px;}
+    .hero{padding:56px 20px 50px;}
+    .hero-inner{gap:26px;}
+    .hero .divider{margin-bottom:20px;}
+    .hero-stamp svg{width:118px;}
+    .divider{margin-bottom:16px;height:6px;}
+    .kicker{margin-bottom:10px;}
+    h2{margin-bottom:14px;}
+    .lede{font-size:1.06rem;line-height:1.65;}
+    .stats-grid{gap:16px;}
+    .how-grid{gap:26px;margin-top:34px;}
+    .winners-head{margin-bottom:28px;}
+    .win-year-head{margin:30px 0 18px;}
+    .video-frame{margin:28px auto 0;}
+    .fw-inner{padding:52px 20px;gap:26px;}
+    .fw-cover{margin-top:22px;}
+    .fw-cover img{max-width:210px;}
+    .pod-inner{gap:32px;}
+    .enter-inner{gap:34px;}
+    .enter-photo{margin-top:24px;height:220px;}
+    .roundups{margin-top:38px;padding-top:26px;}
+    .news{padding:56px 20px;}
+    .news-btn{margin-top:24px;}
+    .news h2{margin:14px 0 18px;}
+    .news-bulb{width:72px;margin-bottom:12px;}
+    footer{padding:44px 20px 0;}
+    .photo-band{height:38vh;}
   }
 </style>
 <style>
@@ -323,6 +349,11 @@
   .ru-btn.pod:hover{background:var(--yellow);}
   @media(max-width:860px){.topic-hero-inner{grid-template-columns:1fr;}.topic-hero .hero-stamp{display:none;}}
   @media(max-width:640px){.ru-row{grid-template-columns:1fr;gap:24px;}.ru-cover img{max-width:200px;}}
+  @media(max-width:560px){
+    .topic-hero{padding:52px 20px 46px;}
+    .ru-row{padding:30px 0;gap:16px;}
+    .ru-cover img{max-width:120px;}
+  }
 </style>
 </head>
 <body>
@@ -350,8 +381,8 @@
     </a>
     <ul class="nav-links">
       <li><a href="about.html">About</a></li>
-      <li><a href="index.html#archive">Past Winners</a></li>
-        <li><a href="index.html#roundups">Best Books</a></li>
+      <li><a href="past-winners.html">Past Winners</a></li>
+        <li><a href="best-books.html">Best Books</a></li>
       <li><a href="podcast.html">Podcast</a></li>
       <li><a href="faq.html">FAQ</a></li>
       <li><a href="enter.html" class="nav-cta">Enter the 2026 Awards</a></li>
@@ -367,7 +398,7 @@
       <div class="divider"></div>
       <p class="kicker">Best Books Roundups</p>
       <h1>The Best Books For<br>Entrepreneurs Of<br>The Past Decade</h1>
-      <p class="sub">From more than 800 books honored across a decade of the Non-Obvious Book Awards, these are the ones we most recommend to founders and builders &mdash; on starting up, raising money, negotiating, staying small on purpose, and surviving the messy middle.</p>
+      <p class="sub">From more than 800 books honored across a decade of the Non-Obvious Book Awards, these are the ones we most recommend to founders and builders: on starting up, raising money, negotiating, staying small on purpose, and surviving the messy middle.</p>
       <p class="hero-disclaimer">*This list does not include books published in 2026, which are currently under review as part of our 2026 awards program.</p>
     </div>
     <div class="hero-stamp">
@@ -387,7 +418,7 @@
           <span class="ru-year">2024 &middot; Longlist</span>
           <h3>Pivot or Die</h3>
           <p class="auth">by Gary Shapiro</p>
-          <p class="blurb">Consumer Technology Association CEO Gary Shapiro has watched thousands of companies rise and fall through CES &mdash; here he distills why the ability to pivot is the defining survival skill of any venture.</p>
+          <p class="blurb">Consumer Technology Association CEO Gary Shapiro has watched thousands of companies rise and fall through CES: here he distills why the ability to pivot is the defining survival skill of any venture.</p>
           <div class="ru-links"><a class="ru-btn amz" href="https://www.amazon.com/dp/0063374773/?tag=influenmarket-20" target="_blank" rel="noopener sponsored">Buy Amazon</a><a class="ru-btn local" href="https://bookshop.org/a/8476/9780063374775" target="_blank" rel="noopener sponsored">Buy Local</a><a class="ru-btn ghost" href="2024.html">All 2024 Winners &#8594;</a></div>
         </div>
       </div>
@@ -397,7 +428,7 @@
           <span class="ru-year">2023 &middot; Longlist</span>
           <h3>I Hope You Fail</h3>
           <p class="auth">by Pinky Cole</p>
-          <p class="blurb">Slutty Vegan founder Pinky Cole flips every failure in her improbable rise into fuel &mdash; a raw, energizing playbook for entrepreneurs who will inevitably hit the wall.</p>
+          <p class="blurb">Slutty Vegan founder Pinky Cole flips every failure in her improbable rise into fuel: a raw, energizing playbook for entrepreneurs who will inevitably hit the wall.</p>
           <div class="ru-links"><a class="ru-btn amz" href="https://www.amazon.com/dp/1400242851/?tag=influenmarket-20" target="_blank" rel="noopener sponsored">Buy Amazon</a><a class="ru-btn local" href="https://bookshop.org/a/8476/9781400242856" target="_blank" rel="noopener sponsored">Buy Local</a><a class="ru-btn ghost" href="2023.html">All 2023 Winners &#8594;</a></div>
         </div>
       </div>
@@ -407,7 +438,7 @@
           <span class="ru-year">2022 &middot; Longlist</span>
           <h3>The Power Law</h3>
           <p class="auth">by Sebastian Mallaby</p>
-          <p class="blurb">Sebastian Mallaby&rsquo;s definitive history of venture capital &mdash; how a handful of believers in outlier bets built the machine that finances nearly every startup dream.</p>
+          <p class="blurb">Sebastian Mallaby&rsquo;s definitive history of venture capital: how a handful of believers in outlier bets built the machine that finances nearly every startup dream.</p>
           <div class="ru-links"><a class="ru-btn amz" href="https://www.amazon.com/dp/052555999X/?tag=influenmarket-20" target="_blank" rel="noopener sponsored">Buy Amazon</a><a class="ru-btn local" href="https://bookshop.org/a/8476/9780525559993" target="_blank" rel="noopener sponsored">Buy Local</a><a class="ru-btn ghost" href="2022.html">All 2022 Winners &#8594;</a></div>
         </div>
       </div>
@@ -417,7 +448,7 @@
           <span class="ru-year">2022 &middot; Longlist</span>
           <h3>The Founders</h3>
           <p class="auth">by Jimmy Soni</p>
-          <p class="blurb">Jimmy Soni&rsquo;s deeply reported story of the PayPal mafia &mdash; Musk, Thiel, Levchin and company &mdash; and the improbable beginnings of the network that shaped two decades of tech.</p>
+          <p class="blurb">Jimmy Soni&rsquo;s deeply reported story of the PayPal mafia, from Musk and Thiel to Levchin, and the improbable beginnings of the network that shaped two decades of tech.</p>
           <div class="ru-links"><a class="ru-btn amz" href="https://www.amazon.com/dp/150119724X/?tag=influenmarket-20" target="_blank" rel="noopener sponsored">Buy Amazon</a><a class="ru-btn local" href="https://bookshop.org/a/8476/9781501197246" target="_blank" rel="noopener sponsored">Buy Local</a><a class="ru-btn ghost" href="2022.html">All 2022 Winners &#8594;</a></div>
         </div>
       </div>
@@ -437,7 +468,7 @@
           <span class="ru-year">2019 &middot; Longlist</span>
           <h3>Company of One</h3>
           <p class="auth">by Paul Jarvis</p>
-          <p class="blurb">Paul Jarvis makes the liberating case that staying small is a strategy, not a failure &mdash; essential reading for every bootstrapper and solo founder.</p>
+          <p class="blurb">Paul Jarvis makes the liberating case that staying small is a strategy, not a failure: essential reading for every bootstrapper and solo founder.</p>
           <div class="ru-links"><a class="ru-btn amz" href="https://www.amazon.com/dp/0358213258/?tag=influenmarket-20" target="_blank" rel="noopener sponsored">Buy Amazon</a><a class="ru-btn local" href="https://bookshop.org/a/8476/9780358213253" target="_blank" rel="noopener sponsored">Buy Local</a><a class="ru-btn ghost" href="2019.html">All 2019 Winners &#8594;</a></div>
         </div>
       </div>
@@ -447,7 +478,7 @@
           <span class="ru-year">2019 &middot; Shortlist</span>
           <h3>Loonshots</h3>
           <p class="auth">by Safi Bahcall</p>
-          <p class="blurb">Physicist-entrepreneur Safi Bahcall explains why organizations kill their wildest ideas &mdash; and the structures that let &ldquo;loonshots&rdquo; survive long enough to change the world.</p>
+          <p class="blurb">Physicist-entrepreneur Safi Bahcall explains why organizations kill their wildest ideas, and the structures that let &ldquo;loonshots&rdquo; survive long enough to change the world.</p>
           <div class="ru-links"><a class="ru-btn amz" href="https://www.amazon.com/dp/125062309X/?tag=influenmarket-20" target="_blank" rel="noopener sponsored">Buy Amazon</a><a class="ru-btn local" href="https://bookshop.org/a/8476/9781250623096" target="_blank" rel="noopener sponsored">Buy Local</a><a class="ru-btn pod" href="https://www.nonobvious.com/podcast" target="_blank" rel="noopener">Listen To Episode</a><a class="ru-btn ghost" href="2019.html">All 2019 Winners &#8594;</a></div>
         </div>
       </div>
@@ -457,7 +488,7 @@
           <span class="ru-year">2018 &middot; Longlist</span>
           <h3>The Messy Middle</h3>
           <p class="auth">by Scott Belsky</p>
-          <p class="blurb">Behance founder Scott Belsky maps the long, volatile stretch between starting and finishing that nobody talks about &mdash; and how to endure the lows and optimize the highs.</p>
+          <p class="blurb">Behance founder Scott Belsky maps the long, volatile stretch between starting and finishing that nobody talks about, and how to endure the lows and optimize the highs.</p>
           <div class="ru-links"><a class="ru-btn amz" href="https://www.amazon.com/dp/0735218072/?tag=influenmarket-20" target="_blank" rel="noopener sponsored">Buy Amazon</a><a class="ru-btn local" href="https://bookshop.org/a/8476/9780735218079" target="_blank" rel="noopener sponsored">Buy Local</a><a class="ru-btn ghost" href="2018.html">All 2018 Winners &#8594;</a></div>
         </div>
       </div>
@@ -467,7 +498,7 @@
           <span class="ru-year">2018 &middot; Longlist</span>
           <h3>Lost and Founder</h3>
           <p class="auth">by Rand Fishkin</p>
-          <p class="blurb">Moz founder Rand Fishkin&rsquo;s painfully honest field guide to startups &mdash; the anti-hype book every founder should read before raising a dollar.</p>
+          <p class="blurb">Moz founder Rand Fishkin&rsquo;s painfully honest field guide to startups: the anti-hype book every founder should read before raising a dollar.</p>
           <div class="ru-links"><a class="ru-btn amz" href="https://www.amazon.com/dp/0735213321/?tag=influenmarket-20" target="_blank" rel="noopener sponsored">Buy Amazon</a><a class="ru-btn local" href="https://bookshop.org/a/8476/9780735213326" target="_blank" rel="noopener sponsored">Buy Local</a><a class="ru-btn ghost" href="2018.html">All 2018 Winners &#8594;</a></div>
         </div>
       </div>
@@ -477,7 +508,7 @@
           <span class="ru-year">2017 &middot; Shortlist</span>
           <h3>Entrepreneurial You</h3>
           <p class="auth">by Dorie Clark</p>
-          <p class="blurb">Dorie Clark&rsquo;s practical blueprint for building multiple income streams around your expertise &mdash; the book that launched a thousand portfolio careers.</p>
+          <p class="blurb">Dorie Clark&rsquo;s practical blueprint for building multiple income streams around your expertise: the book that launched a thousand portfolio careers.</p>
           <div class="ru-links"><a class="ru-btn amz" href="https://www.amazon.com/dp/1633692272/?tag=influenmarket-20" target="_blank" rel="noopener sponsored">Buy Amazon</a><a class="ru-btn local" href="https://bookshop.org/a/8476/9781633692275" target="_blank" rel="noopener sponsored">Buy Local</a><a class="ru-btn pod" href="https://www.nonobvious.com/podcast" target="_blank" rel="noopener">Listen To Episode</a><a class="ru-btn ghost" href="2017.html">All 2017 Winners &#8594;</a></div>
         </div>
       </div>
@@ -487,7 +518,7 @@
           <span class="ru-year">2016 &middot; Shortlist</span>
           <h3>Originals</h3>
           <p class="auth">by Adam Grant</p>
-          <p class="blurb">Adam Grant on how non-conformists move the world &mdash; when to trust your instincts, how to champion new ideas, and why originality can be cultivated.</p>
+          <p class="blurb">Adam Grant on how non-conformists move the world: when to trust your instincts, how to champion new ideas, and why originality can be cultivated.</p>
           <div class="ru-links"><a class="ru-btn amz" href="https://www.amazon.com/dp/014312885X/?tag=influenmarket-20" target="_blank" rel="noopener sponsored">Buy Amazon</a><a class="ru-btn local" href="https://bookshop.org/a/8476/9780143128854" target="_blank" rel="noopener sponsored">Buy Local</a><a class="ru-btn ghost" href="2016.html">All 2016 Winners &#8594;</a></div>
         </div>
       </div>
@@ -497,7 +528,7 @@
           <span class="ru-year">2016 &middot; Shortlist</span>
           <h3>Never Split the Difference</h3>
           <p class="auth">by Chris Voss</p>
-          <p class="blurb">Former FBI lead hostage negotiator Chris Voss brings life-or-death negotiation tactics to business &mdash; arguably the most useful negotiation book ever written.</p>
+          <p class="blurb">Former FBI lead hostage negotiator Chris Voss brings life-or-death negotiation tactics to business: arguably the most useful negotiation book ever written.</p>
           <div class="ru-links"><a class="ru-btn amz" href="https://www.amazon.com/dp/0062407805/?tag=influenmarket-20" target="_blank" rel="noopener sponsored">Buy Amazon</a><a class="ru-btn local" href="https://bookshop.org/a/8476/9780062407801" target="_blank" rel="noopener sponsored">Buy Local</a><a class="ru-btn ghost" href="2016.html">All 2016 Winners &#8594;</a></div>
         </div>
       </div>
@@ -507,7 +538,7 @@
           <span class="ru-year">2014/15 &middot; Shortlist</span>
           <h3>Hooked</h3>
           <p class="auth">by Nir Eyal</p>
-          <p class="blurb">Nir Eyal&rsquo;s four-step model for building habit-forming products &mdash; the framework behind a generation of product design.</p>
+          <p class="blurb">Nir Eyal&rsquo;s four-step model for building habit-forming products: the framework behind a generation of product design.</p>
           <div class="ru-links"><a class="ru-btn amz" href="https://www.amazon.com/dp/1591847788/?tag=influenmarket-20" target="_blank" rel="noopener sponsored">Buy Amazon</a><a class="ru-btn local" href="https://bookshop.org/a/8476/9781591847786" target="_blank" rel="noopener sponsored">Buy Local</a><a class="ru-btn pod" href="https://www.nonobvious.com/podcast" target="_blank" rel="noopener">Listen To Episode</a><a class="ru-btn ghost" href="2014.html">All 2014/15 Winners &#8594;</a></div>
         </div>
       </div>
@@ -557,8 +588,8 @@
       <ul>
         <li><a href="about.html">About the Awards</a></li>
         <li><a href="enter.html">How to Enter</a></li>
-        <li><a href="index.html#archive">Past Winners</a></li>
-        <li><a href="index.html#roundups">Best Books Roundups</a></li>
+        <li><a href="past-winners.html">Past Winners</a></li>
+        <li><a href="best-books.html">Best Books Roundups</a></li>
         <li><a href="faq.html">FAQ</a></li>
         <li><a href="podcast.html">Podcast</a></li>
       </ul>
@@ -568,9 +599,9 @@
       <ul>
         <li><a href="https://www.nonobvious.com" target="_blank">Non-Obvious Company</a></li>
         <li><a href="https://www.nonobvious.com/subscribe" target="_blank">Newsletter</a></li>
-        <li><a href="#">YouTube</a></li>
-        <li><a href="#">LinkedIn</a></li>
-        <li><a href="#">Instagram</a></li>
+        <li><a href="https://www.youtube.com/@rohitbhargava" target="_blank">YouTube</a></li>
+        <li><a href="https://www.linkedin.com/in/rohitbhargava/" target="_blank">LinkedIn</a></li>
+        <li><a href="https://www.instagram.com/rohitbb/" target="_blank">Instagram</a></li>
       </ul>
     </div>
   </div>

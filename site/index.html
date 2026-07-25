@@ -286,11 +286,37 @@
     nav .nav-inner{position:relative;}
   }
   @media(max-width:560px){
-    section{padding:60px 22px;}
-    .cat-grid{grid-template-columns:repeat(2,1fr);}
+    section{padding:44px 20px;}
+    .cat-grid{grid-template-columns:repeat(2,1fr);gap:22px;margin-top:36px;row-gap:34px;}
     .win-grid{grid-template-columns:1fr;}
-    .year-grid{grid-template-columns:repeat(2,1fr);}
-    .foot-inner{grid-template-columns:1fr;}
+    .year-grid{grid-template-columns:repeat(2,1fr);margin-top:32px;gap:16px;}
+    .foot-inner{grid-template-columns:1fr;gap:32px;padding-bottom:40px;}
+    .hero{padding:56px 20px 50px;}
+    .hero-inner{gap:26px;}
+    .hero .divider{margin-bottom:20px;}
+    .hero-stamp svg{width:118px;}
+    .divider{margin-bottom:16px;height:6px;}
+    .kicker{margin-bottom:10px;}
+    h2{margin-bottom:14px;}
+    .lede{font-size:1.06rem;line-height:1.65;}
+    .stats-grid{gap:16px;}
+    .how-grid{gap:26px;margin-top:34px;}
+    .winners-head{margin-bottom:28px;}
+    .win-year-head{margin:30px 0 18px;}
+    .video-frame{margin:28px auto 0;}
+    .fw-inner{padding:52px 20px;gap:26px;}
+    .fw-cover{margin-top:22px;}
+    .fw-cover img{max-width:210px;}
+    .pod-inner{gap:32px;}
+    .enter-inner{gap:34px;}
+    .enter-photo{margin-top:24px;height:220px;}
+    .roundups{margin-top:38px;padding-top:26px;}
+    .news{padding:56px 20px;}
+    .news-btn{margin-top:24px;}
+    .news h2{margin:14px 0 18px;}
+    .news-bulb{width:72px;margin-bottom:12px;}
+    footer{padding:44px 20px 0;}
+    .photo-band{height:38vh;}
   }
 </style>
 </head>
@@ -320,8 +346,8 @@
     </a>
     <ul class="nav-links">
       <li><a href="about.html">About</a></li>
-      <li><a href="#archive">Past Winners</a></li>
-        <li><a href="#roundups">Best Books</a></li>
+      <li><a href="past-winners.html">Past Winners</a></li>
+        <li><a href="best-books.html">Best Books</a></li>
       <li><a href="podcast.html">Podcast</a></li>
       <li><a href="faq.html">FAQ</a></li>
       <li><a href="enter.html" class="nav-cta">Enter the 2026 Awards</a></li>
@@ -356,7 +382,7 @@
   <div class="stats-grid">
     <div class="stat"><div class="num c1">10+</div><div class="label">Years of Awards</div></div>
     <div class="stat"><div class="num c2">1,000+</div><div class="label">Books Reviewed Yearly</div></div>
-    <div class="stat"><div class="num c3">100</div><div class="label">Longlist Selections</div></div>
+    <div class="stat"><div class="num c3">825</div><div class="label">Award Winners</div></div>
     <div class="stat"><div class="num c5">250+</div><div class="label">Participating Publishers</div></div>
     <div class="stat"><div class="num c4">53</div><div class="label">Trends Curated</div></div>
   </div>
@@ -431,113 +457,9 @@
 <section class="photo-band" aria-label="Longlisted book covers">
   <img class="bg" src="assets/longlist-mosaic.jpg" alt="A mosaic of longlisted book covers around the Non-Obvious Book Award longlist badge">
   <svg class="pb-wave top" viewBox="0 0 1440 48" preserveAspectRatio="none" aria-hidden="true"><path fill="#ffffff" d="M0,26 C240,46 480,6 720,24 C960,42 1200,10 1440,26 L1440,0 L0,0 Z"/></svg>
-  <svg class="pb-wave bot" viewBox="0 0 1440 48" preserveAspectRatio="none" aria-hidden="true"><path fill="#ffffff" d="M0,26 C240,46 480,6 720,24 C960,42 1200,10 1440,26 L1440,0 L0,0 Z"/></svg>
+  <svg class="pb-wave bot" viewBox="0 0 1440 48" preserveAspectRatio="none" aria-hidden="true"><path fill="#161616" d="M0,26 C240,46 480,6 720,24 C960,42 1200,10 1440,26 L1440,0 L0,0 Z"/></svg>
 </section>
 
-<!-- RECENT WINNERS -->
-<section class="winners" id="winners">
-  <div class="wrap">
-    <div class="winners-head">
-      <div>
-        <div class="divider"></div>
-        <p class="kicker">Recent Winners</p>
-        <h2>The last three years of winners.</h2>
-      </div>
-    </div>
-    <div class="win-year-row">
-      <div class="win-year-head"><span class="yr">2025</span><a class="btn btn-ghost" href="2025.html">See the Full 2025 List &rarr;</a></div>
-      <div class="win-grid">
-      <div class="win-card">
-        <div class="cover"><img src="assets/covers/2025/dinner-with-king-tut-by-sam-kean.jpg" alt="Dinner with King Tut book cover" loading="lazy"></div>
-        <span class="cat-tag" style="background:var(--blue)">Most Original</span>
-        <h3>Dinner with King Tut</h3><p class="author">Sam Kean</p>
-      </div>
-      <div class="win-card">
-        <div class="cover"><img src="assets/covers/2025/wild-courage-by-jenny-wood.jpg" alt="Wild Courage book cover" loading="lazy"></div>
-        <span class="cat-tag" style="background:var(--teal)">Most Useful</span>
-        <h3>Wild Courage</h3><p class="author">Jenny Wood</p>
-      </div>
-      <div class="win-card">
-        <div class="cover"><img src="assets/covers/2025/the-future-of-storytelling-by-charles-melcher.jpg" alt="The Future of Storytelling book cover" loading="lazy"></div>
-        <span class="cat-tag" style="background:var(--orange)">Most Entertaining</span>
-        <h3>The Future of Storytelling</h3><p class="author">Charles Melcher</p>
-      </div>
-      <div class="win-card">
-        <div class="cover"><img src="assets/covers/2025/careless-people-by-sarah-wynn-williams.jpg" alt="Careless People book cover" loading="lazy"></div>
-        <span class="cat-tag" style="background:var(--magenta)">Most Shareable</span>
-        <h3>Careless People</h3><p class="author">Sarah Wynn-Williams</p>
-      </div>
-      <div class="win-card">
-        <div class="cover"><img src="assets/covers/2025/moral-ambition-by-rutger-bregman.jpg" alt="Moral Ambition book cover" loading="lazy"></div>
-        <span class="cat-tag" style="background:var(--purple)">Most Important</span>
-        <h3>Moral Ambition</h3><p class="author">Rutger Bregman</p>
-      </div>
-      </div>
-    </div>
-    <div class="win-year-row">
-      <div class="win-year-head"><span class="yr">2024</span><a class="btn btn-ghost" href="2024.html">See the Full 2024 List &rarr;</a></div>
-      <div class="win-grid">
-      <div class="win-card">
-        <div class="cover"><img src="assets/covers/2024/trash-talk-by-rafi-kohan.jpg" alt="Trash Talk book cover" loading="lazy"></div>
-        <span class="cat-tag" style="background:var(--blue)">Most Original</span>
-        <h3>Trash Talk</h3><p class="author">Rafi Kohan</p>
-      </div>
-      <div class="win-card">
-        <div class="cover"><img src="assets/covers/2024/negotiating-while-black-by-damali-peterman.jpg" alt="Negotiating While Black book cover" loading="lazy"></div>
-        <span class="cat-tag" style="background:var(--teal)">Most Useful</span>
-        <h3>Negotiating While Black</h3><p class="author">Damali Peterman</p>
-      </div>
-      <div class="win-card">
-        <div class="cover"><img src="assets/covers/2024/sticky-notes-by-matthew-eicheldinger.jpg" alt="Sticky Notes book cover" loading="lazy"></div>
-        <span class="cat-tag" style="background:var(--orange)">Most Entertaining</span>
-        <h3>Sticky Notes</h3><p class="author">Matthew Eicheldinger</p>
-      </div>
-      <div class="win-card">
-        <div class="cover"><img src="assets/covers/2024/supercommunicators-by-charles-duhigg.jpg" alt="Supercommunicators book cover" loading="lazy"></div>
-        <span class="cat-tag" style="background:var(--magenta)">Most Shareable</span>
-        <h3>Supercommunicators</h3><p class="author">Charles Duhigg</p>
-      </div>
-      <div class="win-card">
-        <div class="cover"><img src="assets/covers/2024/brave-new-words-by-salman-khan.jpg" alt="Brave New Words book cover" loading="lazy"></div>
-        <span class="cat-tag" style="background:var(--purple)">Most Important</span>
-        <h3>Brave New Words</h3><p class="author">Salman Khan</p>
-      </div>
-      </div>
-    </div>
-    <div class="win-year-row">
-      <div class="win-year-head"><span class="yr">2023</span><a class="btn btn-ghost" href="2023.html">See the Full 2023 List &rarr;</a></div>
-      <div class="win-grid">
-      <div class="win-card">
-        <div class="cover"><img src="assets/covers/2023/Pockets.jpg" alt="Pockets book cover" loading="lazy"></div>
-        <span class="cat-tag" style="background:var(--blue)">Most Original</span>
-        <h3>Pockets</h3><p class="author">Hannah Carlson</p>
-      </div>
-      <div class="win-card">
-        <div class="cover"><img src="assets/covers/2023/OutrageMachine.jpg" alt="Outrage Machine book cover" loading="lazy"></div>
-        <span class="cat-tag" style="background:var(--teal)">Most Useful</span>
-        <h3>Outrage Machine</h3><p class="author">Tobias Rose-Stockwell</p>
-      </div>
-      <div class="win-card">
-        <div class="cover"><img src="assets/covers/2023/TheTheoryofEverythingElse.jpg" alt="The Theory of Everything Else book cover" loading="lazy"></div>
-        <span class="cat-tag" style="background:var(--orange)">Most Entertaining</span>
-        <h3>The Theory of Everything Else</h3><p class="author">Dan Schreiber</p>
-      </div>
-      <div class="win-card">
-        <div class="cover"><img src="assets/covers/2023/YourBrainonArt.jpg" alt="Your Brain on Art book cover" loading="lazy"></div>
-        <span class="cat-tag" style="background:var(--magenta)">Most Shareable</span>
-        <h3>Your Brain on Art</h3><p class="author">Susan Magsamen and Ivy Ross</p>
-      </div>
-      <div class="win-card">
-        <div class="cover"><img src="assets/covers/2023/HowBigThingsGetDone.jpg" alt="How Big Things Get Done book cover" loading="lazy"></div>
-        <span class="cat-tag" style="background:var(--purple)">Most Important</span>
-        <h3>How Big Things Get Done</h3><p class="author">Bent Flyvbjerg and Dan Gardner</p>
-      </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<div class="wave" style="background:#161616" aria-hidden="true"><svg viewBox="0 0 1440 48" preserveAspectRatio="none"><path fill="#ffffff" d="M0,26 C240,46 480,6 720,24 C960,42 1200,10 1440,26 L1440,0 L0,0 Z"/></svg></div>
 
 <!-- ARCHIVE -->
 <section class="archive" id="archive">
@@ -576,6 +498,10 @@
         <a class="ru-card" style="--c:var(--red)" href="best-marketing-books.html"><b>Marketing</b><span>Branding &amp; persuasion &#8594;</span></a>
         <a class="ru-card" style="--c:var(--green)" href="best-productivity-books.html"><b>Productivity</b><span>Habits, focus &amp; timing &#8594;</span></a>
         <a class="ru-card" style="--c:var(--navy)" href="best-business-memoirs.html"><b>Business Memoirs</b><span>Founders&rsquo; own stories &#8594;</span></a>
+        <a class="ru-card" style="--c:var(--orange)" href="best-creativity-books.html"><b>Creativity &amp; Innovation</b><span>Where ideas come from &#8594;</span></a>
+        <a class="ru-card" style="--c:var(--purple)" href="best-leadership-books.html"><b>Leadership</b><span>Leading teams &amp; culture &#8594;</span></a>
+        <a class="ru-card" style="--c:var(--blue)" href="best-communication-books.html"><b>Communication</b><span>Storytelling &amp; persuasion &#8594;</span></a>
+        <a class="ru-card" style="--c:var(--magenta)" href="best-psychology-books.html"><b>Psychology</b><span>How the mind works &#8594;</span></a>
         <a class="ru-card" style="--c:var(--lime)" href="best-books-south-asian-authors.html"><b>South Asian Authors</b><span>Award-winning voices &#8594;</span></a>
       </div>
     </div>
@@ -648,7 +574,7 @@
     <div>
       <div class="divider"></div>
       <p class="kicker">Love Words?</p>
-      <h2>Future Words Arrives This October</h2>
+      <h2>Future Words Arrives This October!</h2>
       <p class="fw-sub">Future Words: A Non-Obvious Glossary of Terms That Don&rsquo;t Exist (But Soon Will)</p>
       <p class="lede">From our founder Rohit Bhargava and futurist Henry Coutinho-Mason comes this book for word lovers, trend spotters, and anyone who has ever wished for a word that didn&rsquo;t quite exist. From the bestselling authors of <i>The Future Normal</i>.</p>
       <a class="fw-btn" href="https://www.futurewordsbook.com" target="_blank" rel="noopener">See The Words</a>
@@ -689,8 +615,8 @@
       <ul>
         <li><a href="about.html">About the Awards</a></li>
         <li><a href="enter.html">How to Enter</a></li>
-        <li><a href="#archive">Past Winners</a></li>
-        <li><a href="#roundups">Best Books Roundups</a></li>
+        <li><a href="past-winners.html">Past Winners</a></li>
+        <li><a href="best-books.html">Best Books Roundups</a></li>
         <li><a href="faq.html">FAQ</a></li>
         <li><a href="podcast.html">Podcast</a></li>
       </ul>
@@ -700,9 +626,9 @@
       <ul>
         <li><a href="https://www.nonobvious.com" target="_blank">Non-Obvious Company</a></li>
         <li><a href="https://www.nonobvious.com/subscribe" target="_blank">Newsletter</a></li>
-        <li><a href="#">YouTube</a></li>
-        <li><a href="#">LinkedIn</a></li>
-        <li><a href="#">Instagram</a></li>
+        <li><a href="https://www.youtube.com/@rohitbhargava" target="_blank">YouTube</a></li>
+        <li><a href="https://www.linkedin.com/in/rohitbhargava/" target="_blank">LinkedIn</a></li>
+        <li><a href="https://www.instagram.com/rohitbb/" target="_blank">Instagram</a></li>
       </ul>
     </div>
   </div>

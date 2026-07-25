@@ -79,6 +79,7 @@ cards_html = '\n'.join(cards)
 extra_css = """
   /* ---------- Podcast page ---------- */
   .pod-hero{background:var(--yellow);padding:150px 6vw 90px;}
+  @media(max-width:560px){.pod-hero{padding:52px 20px 46px;}}
   .pod-hero-inner{max-width:1140px;margin:0 auto;display:grid;grid-template-columns:1.3fr .7fr;gap:60px;align-items:center;}
   .pod-hero h1{font-size:clamp(2.4rem,5vw,4rem);line-height:1.04;text-transform:uppercase;letter-spacing:.02em;font-weight:900;}
   .pod-hero .sub{font-family:var(--serif);font-style:italic;font-size:1.15rem;line-height:1.65;margin-top:22px;max-width:560px;color:#222;}
@@ -102,6 +103,7 @@ extra_css = """
   .pod-cta .lede{color:#cfcfcf;margin:18px auto 34px;}
   @media(max-width:980px){.ep-grid{grid-template-columns:1fr;}}
   @media(max-width:860px){.pod-hero-inner{grid-template-columns:1fr;}.pod-hero-art{display:none;}.ep-card{grid-template-columns:130px 1fr;gap:18px;}}
+  @media(max-width:560px){.ep-card{grid-template-columns:96px 1fr;gap:14px;}}
 """
 
 # ---------------- SEO / GEO ----------------

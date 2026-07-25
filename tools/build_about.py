@@ -25,6 +25,7 @@ YEL, BLK, WHT, CRM = '#F7C731', '#161616', '#ffffff', '#FBF8F1'
 extra_css = """
   /* ---------- About page ---------- */
   .about-hero{background:var(--yellow);padding:150px 6vw 90px;}
+  @media(max-width:560px){.about-hero{padding:52px 20px 46px;}}
   .about-hero-inner{max-width:1140px;margin:0 auto;display:grid;grid-template-columns:1.4fr .6fr;gap:60px;align-items:center;}
   .about-hero h1{font-size:clamp(2.4rem,5vw,4rem);line-height:1.04;text-transform:uppercase;letter-spacing:.02em;font-weight:900;}
   .about-hero .sub{font-family:var(--serif);font-style:italic;font-size:1.15rem;line-height:1.65;margin-top:22px;max-width:560px;color:#222;}
@@ -67,6 +68,7 @@ extra_css = """
   .founder-body p{font-size:1rem;line-height:1.8;color:#333;margin-bottom:16px;}
   @media(max-width:980px){.steps-grid{grid-template-columns:1fr;}.founder-inner{grid-template-columns:1fr;gap:40px;}.founder-photo{max-width:340px;}}
   @media(max-width:860px){.about-hero-inner{grid-template-columns:1fr;}.about-hero .hero-stamp{display:none;}}
+  @media(max-width:560px){.founder-photo{max-width:230px;}}
 """
 
 # publisher logo mosaic (featured logos first, larger)

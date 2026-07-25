@@ -186,7 +186,19 @@ extra_css = """
   .cta-band{background:var(--yellow);text-align:center;}
   .cta-band .wrap{display:flex;flex-direction:column;align-items:center;}
   @media(max-width:980px){.sl-grid{grid-template-columns:repeat(3,1fr);}.ll-grid{grid-template-columns:repeat(3,1fr);}}
-  @media(max-width:560px){.sl-grid{grid-template-columns:repeat(2,1fr);}.ll-grid{grid-template-columns:repeat(2,1fr);}}
+  @media(max-width:560px){.sl-grid{grid-template-columns:repeat(2,1fr);}.ll-grid{grid-template-columns:repeat(3,1fr);}
+    .year-hero{padding:48px 20px 44px;}
+    .win-row{padding:30px 0;gap:18px;}
+    .win-row .cover img{max-width:115px;}
+    .sl-row img{max-width:105px;}
+    .sl-duo{gap:30px 36px;margin-top:32px;}
+    .sl-grid{margin-top:30px;gap:20px;}
+    .ll-grid{margin-top:30px;gap:16px 12px;}
+    .book .t{font-size:.68rem;margin-top:7px;}
+    .book .a{font-size:.64rem;}
+    .ll-foot{margin-top:36px;}
+    .trend-grid{margin-top:32px;gap:24px;}
+  }
 </style>
 """
 
