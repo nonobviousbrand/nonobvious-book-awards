@@ -166,7 +166,7 @@ page = f'''<!DOCTYPE html>
     <div>
       <div class="divider"></div>
       <p class="kicker">The Award Archive</p>
-      <h1>Every Year.<br>Every Winner.</h1>
+      <h1>Every Year. <br>Every Winner.</h1>
       <p class="sub">A decade of the Non-Obvious Book Awards, year by year: the five winners, the biggest themes we found in the books of each year, and the full lists behind them.</p>
     </div>
     <div class="hero-stamp">

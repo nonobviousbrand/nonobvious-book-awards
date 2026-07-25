@@ -94,7 +94,7 @@ page = f"""<!DOCTYPE html>
       <span class="open-pill"><span class="dot"></span>2026 Entries Now Open</span>
       <div class="divider"></div>
       <p class="kicker">Have A Great Book?</p>
-      <h1>How To Submit<br>A Book</h1>
+      <h1>How To Submit <br>A Book</h1>
       <p class="sub">Entries for the 2026 Non-Obvious Book Awards are officially open. Here's everything you need to know to enter &mdash; and why we make it easier than any other book awards program.</p>
     </div>
     <div class="hero-stamp">
@@ -191,9 +191,9 @@ page = f"""<!DOCTYPE html>
     <div class="address-card">
       <p class="kicker">Where To Send Your Book</p>
       <address>
-        Non-Obvious Book Awards<br>
-        To: Awards Coordinator<br>
-        2961-A Hunter Mill Rd. #630<br>
+        Non-Obvious Book Awards <br>
+        To: Awards Coordinator <br>
+        2961-A Hunter Mill Rd. #630 <br>
         Oakton, VA 22124
       </address>
     </div>

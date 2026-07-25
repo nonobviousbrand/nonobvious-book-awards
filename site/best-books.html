@@ -137,6 +137,9 @@
   /* ---------- How it works ---------- */
   .how{background:var(--cream);}
   .how-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:44px;margin-top:64px;}
+  .how-cols{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center;}
+  .how-vidcap{font-family:var(--serif);font-style:italic;font-size:.9rem;color:#777;margin-top:14px;text-align:center;}
+  @media(max-width:900px){.how-cols{grid-template-columns:1fr;gap:32px;}}
   .step{border-top:8px solid var(--black);padding-top:28px;}
   .step:nth-child(1){border-color:var(--blue);}
   .step:nth-child(2){border-color:var(--teal);}
@@ -285,6 +288,10 @@
     nav.open .nav-links{display:flex;flex-direction:column;align-items:flex-start;gap:18px;position:absolute;top:100%;left:0;right:0;background:var(--white);padding:20px 32px 28px;border-bottom:1px solid rgba(0,0,0,.08);box-shadow:0 18px 28px rgba(0,0,0,.10);}
     nav .nav-inner{position:relative;}
   }
+  h1, h2{text-wrap:balance;}
+  @media(max-width:640px){
+    h1 br, h2 br{display:none;}
+  }
   @media(max-width:560px){
     section{padding:44px 20px;}
     .cat-grid{grid-template-columns:repeat(2,1fr);gap:22px;margin-top:36px;row-gap:34px;}
@@ -329,8 +336,8 @@
   .bb-grid{max-width:1140px;margin:56px auto 0;display:grid;grid-template-columns:repeat(2,1fr);gap:38px;}
   .bb-card{display:block;text-decoration:none;color:var(--ink);background:var(--white);border:3px solid var(--black);border-top:10px solid var(--c);padding:28px 30px 26px;box-shadow:10px 10px 0 rgba(0,0,0,.12);transition:transform .18s,box-shadow .18s;}
   .bb-card:hover{transform:translate(-3px,-3px);box-shadow:14px 14px 0 rgba(0,0,0,.16);}
-  .bb-covers{display:flex;gap:10px;margin-bottom:20px;}
-  .bb-covers img{width:64px;aspect-ratio:2/3;object-fit:cover;box-shadow:0 8px 16px rgba(0,0,0,.2);}
+  .bb-covers{display:flex;gap:8px;margin-bottom:20px;flex-wrap:wrap;}
+  .bb-covers img{width:60px;aspect-ratio:2/3;object-fit:cover;box-shadow:0 8px 16px rgba(0,0,0,.2);}
   .bb-card h3{font-family:var(--disp);font-weight:900;font-size:1.35rem;line-height:1.2;margin-bottom:10px;text-transform:uppercase;}
   .bb-blurb{font-family:var(--serif);font-size:.98rem;line-height:1.7;color:#444;}
   .bb-more{display:inline-block;margin-top:16px;font-family:var(--disp);font-weight:800;font-size:.78rem;letter-spacing:.05em;text-transform:uppercase;border-bottom:3px solid var(--c);padding-bottom:3px;}
@@ -366,12 +373,12 @@
   <div class="nav-inner">
     <a class="nav-logo" href="index.html">
       <img src="assets/badges/web/seal-gold.png" alt="The Non-Obvious Book Award seal">
-      <span class="wordmark">NON-OBVIOUS<br>BOOK AWARDS</span>
+      <span class="wordmark">NON-OBVIOUS <br>BOOK AWARDS</span>
     </a>
     <ul class="nav-links">
       <li><a href="about.html">About</a></li>
-      <li><a href="past-winners.html">Past Winners</a></li>
-        <li><a href="best-books.html">Best Books</a></li>
+      <li><a href="past-winners.html">The Winners</a></li>
+        <li><a href="best-books.html">Reading Lists</a></li>
       <li><a href="podcast.html">Podcast</a></li>
       <li><a href="faq.html">FAQ</a></li>
       <li><a href="enter.html" class="nav-cta">Enter the 2026 Awards</a></li>
@@ -386,7 +393,7 @@
     <div>
       <div class="divider"></div>
       <p class="kicker">Curated Reading Lists</p>
-      <h1>The Best Books.<br>By Every Measure.</h1>
+      <h1>The Best Books. <br>By Every Measure.</h1>
       <p class="sub">Fifteen reading lists drawn from more than 800 books honored across a decade of the Non-Obvious Book Awards: by award, by topic, and by the voices behind them.</p>
     </div>
     <div class="hero-stamp">
@@ -397,113 +404,95 @@
 
 <div class="wave" style="background:#ffffff" aria-hidden="true"><svg viewBox="0 0 1440 48" preserveAspectRatio="none"><path fill="#F7C731" d="M0,26 C240,46 480,6 720,24 C960,42 1200,10 1440,26 L1440,0 L0,0 Z"/></svg></div>
 
-<!-- BY AWARD -->
+<!-- ALL LISTS -->
 <section style="background:var(--white)">
-  <div class="bb-head">
-    <div class="divider"></div>
-    <p class="kicker">By Award Category</p>
-    <h2>A decade of winners,<br>five ways.</h2>
-  </div>
-  <div class="bb-grid">
+  <div class="bb-grid" style="margin-top:0">
       <a class="bb-card" style="--c:var(--purple)" href="most-important-books.html">
-        <div class="bb-covers"><img src="assets/covers/2025/moral-ambition-by-rutger-bregman.jpg" alt="" loading="lazy"><img src="assets/covers/2024/brave-new-words-by-salman-khan.jpg" alt="" loading="lazy"><img src="assets/covers/2023/HowBigThingsGetDone.jpg" alt="" loading="lazy"><img src="assets/covers/2022/stolen-focus-by-johann-hari.jpg" alt="" loading="lazy"></div>
+        <div class="bb-covers"><img src="assets/covers/2025/moral-ambition-by-rutger-bregman.jpg" alt="" loading="lazy"><img src="assets/covers/2024/brave-new-words-by-salman-khan.jpg" alt="" loading="lazy"><img src="assets/covers/2023/HowBigThingsGetDone.jpg" alt="" loading="lazy"><img src="assets/covers/2022/stolen-focus-by-johann-hari.jpg" alt="" loading="lazy"><img src="assets/covers/2021/the-lonely-century-by-noreena-hertz.jpg" alt="" loading="lazy"><img src="assets/covers/2020/make-change-by-shaun-king.jpg" alt="" loading="lazy"><img src="assets/covers/2019/secondhand-by-adam-minter.jpg" alt="" loading="lazy"></div>
         <h3>The Most Important Books</h3>
         <p class="bb-blurb">Every winner of our Most Important Book award: the books with the biggest ideas about the world we live in.</p>
         <span class="bb-more">11 books &middot; See The List &#8594;</span>
       </a>
       <a class="bb-card" style="--c:var(--blue)" href="most-original-books.html">
-        <div class="bb-covers"><img src="assets/covers/2025/dinner-with-king-tut-by-sam-kean.jpg" alt="" loading="lazy"><img src="assets/covers/2024/trash-talk-by-rafi-kohan.jpg" alt="" loading="lazy"><img src="assets/covers/2023/Pockets.jpg" alt="" loading="lazy"><img src="assets/covers/2022/all-the-living-and-the-dead-by-hayley-campbell.jpg" alt="" loading="lazy"></div>
+        <div class="bb-covers"><img src="assets/covers/2025/dinner-with-king-tut-by-sam-kean.jpg" alt="" loading="lazy"><img src="assets/covers/2024/trash-talk-by-rafi-kohan.jpg" alt="" loading="lazy"><img src="assets/covers/2023/Pockets.jpg" alt="" loading="lazy"><img src="assets/covers/2022/all-the-living-and-the-dead-by-hayley-campbell.jpg" alt="" loading="lazy"><img src="assets/covers/2021/when-we-cease-to-understand-the-world-by-benjamin-labatut.jpg" alt="" loading="lazy"><img src="assets/covers/2020/the-lost-family-by-libby-copeland.jpg" alt="" loading="lazy"><img src="assets/covers/2019/nine-lies-about-work-by-marcus-buckingham-and-ashley-goodall.jpg" alt="" loading="lazy"></div>
         <h3>The Most Original Books</h3>
         <p class="bb-blurb">Every winner of our Most Original Book award: ideas we had simply never seen before.</p>
         <span class="bb-more">11 books &middot; See The List &#8594;</span>
       </a>
       <a class="bb-card" style="--c:var(--teal)" href="most-useful-books.html">
-        <div class="bb-covers"><img src="assets/covers/2025/wild-courage-by-jenny-wood.jpg" alt="" loading="lazy"><img src="assets/covers/2024/negotiating-while-black-by-damali-peterman.jpg" alt="" loading="lazy"><img src="assets/covers/2023/OutrageMachine.jpg" alt="" loading="lazy"><img src="assets/covers/2022/thinking-101-by-woo-kyoung-ahn.jpg" alt="" loading="lazy"></div>
+        <div class="bb-covers"><img src="assets/covers/2025/wild-courage-by-jenny-wood.jpg" alt="" loading="lazy"><img src="assets/covers/2024/negotiating-while-black-by-damali-peterman.jpg" alt="" loading="lazy"><img src="assets/covers/2023/OutrageMachine.jpg" alt="" loading="lazy"><img src="assets/covers/2022/thinking-101-by-woo-kyoung-ahn.jpg" alt="" loading="lazy"><img src="assets/covers/2021/think-again-by-adam-grant.jpg" alt="" loading="lazy"><img src="assets/covers/2020/true-or-false-by-cindy-otis.jpg" alt="" loading="lazy"><img src="assets/covers/2019/writing-to-persuade-by-trish-hall.jpg" alt="" loading="lazy"></div>
         <h3>The Most Useful Books</h3>
         <p class="bb-blurb">Every winner of our Most Useful Book award: the most practical, immediately applicable reads of the decade.</p>
         <span class="bb-more">11 books &middot; See The List &#8594;</span>
       </a>
       <a class="bb-card" style="--c:var(--orange)" href="most-entertaining-books.html">
-        <div class="bb-covers"><img src="assets/covers/2025/the-future-of-storytelling-by-charles-melcher.jpg" alt="" loading="lazy"><img src="assets/covers/2024/sticky-notes-by-matthew-eicheldinger.jpg" alt="" loading="lazy"><img src="assets/covers/2023/TheTheoryofEverythingElse.jpg" alt="" loading="lazy"><img src="assets/covers/2022/atlas-of-the-invisible-by-james-cheshire-and-oliver-uberti.jpg" alt="" loading="lazy"></div>
+        <div class="bb-covers"><img src="assets/covers/2025/the-future-of-storytelling-by-charles-melcher.jpg" alt="" loading="lazy"><img src="assets/covers/2024/sticky-notes-by-matthew-eicheldinger.jpg" alt="" loading="lazy"><img src="assets/covers/2023/TheTheoryofEverythingElse.jpg" alt="" loading="lazy"><img src="assets/covers/2022/atlas-of-the-invisible-by-james-cheshire-and-oliver-uberti.jpg" alt="" loading="lazy"><img src="assets/covers/2021/four-lost-cities-by-annalee-newitz.jpg" alt="" loading="lazy"><img src="assets/covers/2020/lurking-by-joanne-mcneil.jpg" alt="" loading="lazy"><img src="assets/covers/2019/junior-by-thomas-kemeny.jpg" alt="" loading="lazy"></div>
         <h3>The Most Entertaining Books</h3>
         <p class="bb-blurb">Every winner of our Most Entertaining Book award: proof that non-fiction can be as fun as it is smart.</p>
         <span class="bb-more">11 books &middot; See The List &#8594;</span>
       </a>
       <a class="bb-card" style="--c:var(--magenta)" href="most-shareable-books.html">
-        <div class="bb-covers"><img src="assets/covers/2025/careless-people-by-sarah-wynn-williams.jpg" alt="" loading="lazy"><img src="assets/covers/2024/supercommunicators-by-charles-duhigg.jpg" alt="" loading="lazy"><img src="assets/covers/2023/YourBrainonArt.jpg" alt="" loading="lazy"><img src="assets/covers/2022/quit-by-annie-duke.jpg" alt="" loading="lazy"></div>
+        <div class="bb-covers"><img src="assets/covers/2025/careless-people-by-sarah-wynn-williams.jpg" alt="" loading="lazy"><img src="assets/covers/2024/supercommunicators-by-charles-duhigg.jpg" alt="" loading="lazy"><img src="assets/covers/2023/YourBrainonArt.jpg" alt="" loading="lazy"><img src="assets/covers/2022/quit-by-annie-duke.jpg" alt="" loading="lazy"><img src="assets/covers/2021/move-by-parag-khanna.jpg" alt="" loading="lazy"><img src="assets/covers/2020/humankind-by-rutger-bregman.jpg" alt="" loading="lazy"><img src="assets/covers/2019/late-bloomers-by-rich-karlgaard.jpg" alt="" loading="lazy"></div>
         <h3>The Most Shareable Books</h3>
         <p class="bb-blurb">Every winner of our Most Shareable Book award: the books you finish and immediately tell everyone about.</p>
         <span class="bb-more">11 books &middot; See The List &#8594;</span>
       </a>
-  </div>
-</section>
-
-<div class="wave" style="background:#FBF8F1" aria-hidden="true"><svg viewBox="0 0 1440 48" preserveAspectRatio="none"><path fill="#ffffff" d="M0,26 C240,46 480,6 720,24 C960,42 1200,10 1440,26 L1440,0 L0,0 Z"/></svg></div>
-
-<!-- BY TOPIC -->
-<section style="background:var(--cream)">
-  <div class="bb-head">
-    <div class="divider"></div>
-    <p class="kicker">By Topic &amp; Voice</p>
-    <h2>Reading lists for<br>every curiosity.</h2>
-  </div>
-  <div class="bb-grid">
       <a class="bb-card" style="--c:var(--yellow)" href="best-books-for-entrepreneurs.html">
-        <div class="bb-covers"><img src="assets/covers/2024/pivot-or-die-by-gary-shapiro.jpg" alt="" loading="lazy"><img src="assets/covers/2023/IHopeYouFail.jpg" alt="" loading="lazy"><img src="assets/covers/2022/the-power-law-by-sebastian-mallaby.jpg" alt="" loading="lazy"><img src="assets/covers/2022/the-founders-by-jimmy-soni.jpg" alt="" loading="lazy"></div>
+        <div class="bb-covers"><img src="assets/covers/2024/pivot-or-die-by-gary-shapiro.jpg" alt="" loading="lazy"><img src="assets/covers/2023/IHopeYouFail.jpg" alt="" loading="lazy"><img src="assets/covers/2022/the-power-law-by-sebastian-mallaby.jpg" alt="" loading="lazy"><img src="assets/covers/2022/the-founders-by-jimmy-soni.jpg" alt="" loading="lazy"><img src="assets/covers/2021/backable-by-suneel-gupta-with-carlye-adler.jpg" alt="" loading="lazy"><img src="assets/covers/2019/company-of-one-by-paul-jarvis.jpg" alt="" loading="lazy"><img src="assets/covers/2019/loonshots-by-safi-bahcall.jpg" alt="" loading="lazy"></div>
         <h3>Best Books For Entrepreneurs</h3>
         <p class="bb-blurb">Our most recommended books for founders and builders, on starting up, raising money and surviving the messy middle.</p>
         <span class="bb-more">13 books &middot; See The List &#8594;</span>
       </a>
       <a class="bb-card" style="--c:var(--cyan)" href="best-ai-books.html">
-        <div class="bb-covers"><img src="assets/covers/2025/if-anyone-builds-it-everyone-dies-by-eliezer-yudkowsky-and-nate-soares.jpg" alt="" loading="lazy"><img src="assets/covers/2025/raising-ai-by-de-kai.jpg" alt="" loading="lazy"><img src="assets/covers/2024/brave-new-words-by-salman-khan.jpg" alt="" loading="lazy"><img src="assets/covers/2024/the-worlds-i-see-by-fei-fei-li.jpg" alt="" loading="lazy"></div>
+        <div class="bb-covers"><img src="assets/covers/2025/if-anyone-builds-it-everyone-dies-by-eliezer-yudkowsky-and-nate-soares.jpg" alt="" loading="lazy"><img src="assets/covers/2025/raising-ai-by-de-kai.jpg" alt="" loading="lazy"><img src="assets/covers/2024/brave-new-words-by-salman-khan.jpg" alt="" loading="lazy"><img src="assets/covers/2024/the-worlds-i-see-by-fei-fei-li.jpg" alt="" loading="lazy"><img src="assets/covers/2024/genesis-by-eric-schmidt.jpg" alt="" loading="lazy"><img src="assets/covers/2024/the-singularity-is-nearer-by-ray-kurzweil.jpg" alt="" loading="lazy"><img src="assets/covers/2024/the-algorithm-by-hilke-schellmann.jpg" alt="" loading="lazy"></div>
         <h3>Best Books On AI</h3>
         <p class="bb-blurb">The best books on artificial intelligence we have honored: the optimists, the skeptics, the builders and the investigators.</p>
         <span class="bb-more">14 books &middot; See The List &#8594;</span>
       </a>
       <a class="bb-card" style="--c:var(--red)" href="best-marketing-books.html">
-        <div class="bb-covers"><img src="assets/covers/2025/the-strategic-enemy-by-laura-ries.jpg" alt="" loading="lazy"><img src="assets/covers/2024/this-is-strategy-by-seth-godin.jpg" alt="" loading="lazy"><img src="assets/covers/2023/MagicWords.jpg" alt="" loading="lazy"><img src="assets/covers/2023/FortheCulture.jpg" alt="" loading="lazy"></div>
+        <div class="bb-covers"><img src="assets/covers/2025/the-strategic-enemy-by-laura-ries.jpg" alt="" loading="lazy"><img src="assets/covers/2024/this-is-strategy-by-seth-godin.jpg" alt="" loading="lazy"><img src="assets/covers/2023/MagicWords.jpg" alt="" loading="lazy"><img src="assets/covers/2023/FortheCulture.jpg" alt="" loading="lazy"><img src="assets/covers/2022/influence-is-your-superpower-by-zoe-chance.jpg" alt="" loading="lazy"><img src="assets/covers/2020/the-catalyst-by-jonah-berger.jpg" alt="" loading="lazy"><img src="assets/covers/2019/junior-by-thomas-kemeny.jpg" alt="" loading="lazy"></div>
         <h3>Best Marketing Books</h3>
         <p class="bb-blurb">The books that still shape how the best marketers think, on branding, persuasion and why things catch on.</p>
         <span class="bb-more">16 books &middot; See The List &#8594;</span>
       </a>
       <a class="bb-card" style="--c:var(--green)" href="best-productivity-books.html">
-        <div class="bb-covers"><img src="assets/covers/2025/reset-by-dan-heath.jpg" alt="" loading="lazy"><img src="assets/covers/2024/slow-productivity-by-cal-newport.jpg" alt="" loading="lazy"><img src="assets/covers/2024/uptime-by-laura-mae-martin.jpg" alt="" loading="lazy"><img src="assets/covers/2023/ClearThinking.jpg" alt="" loading="lazy"></div>
+        <div class="bb-covers"><img src="assets/covers/2025/reset-by-dan-heath.jpg" alt="" loading="lazy"><img src="assets/covers/2024/slow-productivity-by-cal-newport.jpg" alt="" loading="lazy"><img src="assets/covers/2024/uptime-by-laura-mae-martin.jpg" alt="" loading="lazy"><img src="assets/covers/2023/ClearThinking.jpg" alt="" loading="lazy"><img src="assets/covers/2023/ThePARAMethod.jpg" alt="" loading="lazy"><img src="assets/covers/2022/stolen-focus-by-johann-hari.jpg" alt="" loading="lazy"><img src="assets/covers/2021/subtract-by-leidy-klotz.jpg" alt="" loading="lazy"></div>
         <h3>Best Productivity Books</h3>
         <p class="bb-blurb">The small shelf of books that actually change how people work: habits, focus, timing and doing less, better.</p>
         <span class="bb-more">14 books &middot; See The List &#8594;</span>
       </a>
       <a class="bb-card" style="--c:var(--navy)" href="best-business-memoirs.html">
-        <div class="bb-covers"><img src="assets/covers/2025/careless-people-by-sarah-wynn-williams.jpg" alt="" loading="lazy"><img src="assets/covers/2025/bag-man-by-lew-frankfort.jpg" alt="" loading="lazy"><img src="assets/covers/2025/change-the-recipe-by-jos-andr-s-with-richard-wolffe.jpg" alt="" loading="lazy"><img src="assets/covers/2023/TurnaroundTime.jpg" alt="" loading="lazy"></div>
+        <div class="bb-covers"><img src="assets/covers/2025/careless-people-by-sarah-wynn-williams.jpg" alt="" loading="lazy"><img src="assets/covers/2025/bag-man-by-lew-frankfort.jpg" alt="" loading="lazy"><img src="assets/covers/2025/change-the-recipe-by-jos-andr-s-with-richard-wolffe.jpg" alt="" loading="lazy"><img src="assets/covers/2023/TurnaroundTime.jpg" alt="" loading="lazy"><img src="assets/covers/2023/BlackFounder.jpg" alt="" loading="lazy"><img src="assets/covers/2021/becoming-trader-joe-by-joe-coulombe-with-patty-civalleri.jpg" alt="" loading="lazy"><img src="assets/covers/2021/play-nice-but-win-by-michael-dell.jpg" alt="" loading="lazy"></div>
         <h3>Best Business Memoirs</h3>
         <p class="bb-blurb">First-person stories from founders, CEOs and insiders about what building and leading really looks like.</p>
         <span class="bb-more">14 books &middot; See The List &#8594;</span>
       </a>
       <a class="bb-card" style="--c:var(--orange)" href="best-creativity-books.html">
-        <div class="bb-covers"><img src="assets/covers/2025/make-art-by-nishant-jain.jpg" alt="" loading="lazy"><img src="assets/covers/2025/the-genius-myth-by-helen-lewis.jpg" alt="" loading="lazy"><img src="assets/covers/2024/imagination-by-ruha-benjamin.jpg" alt="" loading="lazy"><img src="assets/covers/2023/AwakenYourGenius.jpg" alt="" loading="lazy"></div>
+        <div class="bb-covers"><img src="assets/covers/2025/make-art-by-nishant-jain.jpg" alt="" loading="lazy"><img src="assets/covers/2025/the-genius-myth-by-helen-lewis.jpg" alt="" loading="lazy"><img src="assets/covers/2024/imagination-by-ruha-benjamin.jpg" alt="" loading="lazy"><img src="assets/covers/2023/AwakenYourGenius.jpg" alt="" loading="lazy"><img src="assets/covers/2022/how-to-host-a-viking-funeral-by-kyle-scheele.jpg" alt="" loading="lazy"><img src="assets/covers/2020/how-design-makes-the-world-by-scott-berkun.jpg" alt="" loading="lazy"><img src="assets/covers/2019/alchemy-by-rory-sutherland.jpg" alt="" loading="lazy"></div>
         <h3>Best Books On Creativity & Innovation</h3>
         <p class="bb-blurb">Where ideas come from, how to champion them, and why the most original thinkers see the world differently.</p>
         <span class="bb-more">16 books &middot; See The List &#8594;</span>
       </a>
       <a class="bb-card" style="--c:var(--purple)" href="best-leadership-books.html">
-        <div class="bb-covers"><img src="assets/covers/2025/you-re-the-boss-by-sabina-nawaz.jpg" alt="" loading="lazy"><img src="assets/covers/2025/managing-up-by-melody-wilding.jpg" alt="" loading="lazy"><img src="assets/covers/2024/how-leaders-learn-by-david-novak.jpg" alt="" loading="lazy"><img src="assets/covers/2023/HowBigThingsGetDone.jpg" alt="" loading="lazy"></div>
+        <div class="bb-covers"><img src="assets/covers/2025/you-re-the-boss-by-sabina-nawaz.jpg" alt="" loading="lazy"><img src="assets/covers/2025/managing-up-by-melody-wilding.jpg" alt="" loading="lazy"><img src="assets/covers/2024/how-leaders-learn-by-david-novak.jpg" alt="" loading="lazy"><img src="assets/covers/2023/HowBigThingsGetDone.jpg" alt="" loading="lazy"><img src="assets/covers/2022/when-everyone-leads-by-ed-o-malley-and-julia-fabris-mcbride.jpg" alt="" loading="lazy"><img src="assets/covers/2020/leading-with-gratitude-by-adrian-gostick-and-chester-elton.jpg" alt="" loading="lazy"><img src="assets/covers/2019/nine-lies-about-work-by-marcus-buckingham-and-ashley-goodall.jpg" alt="" loading="lazy"></div>
         <h3>Best Leadership Books</h3>
         <p class="bb-blurb">The books we most recommend on leading teams, building culture and becoming a boss people want to work for.</p>
         <span class="bb-more">15 books &middot; See The List &#8594;</span>
       </a>
       <a class="bb-card" style="--c:var(--blue)" href="best-communication-books.html">
-        <div class="bb-covers"><img src="assets/covers/2025/talk-to-me-nice-by-minda-harts.jpg" alt="" loading="lazy"><img src="assets/covers/2025/the-future-of-storytelling-by-charles-melcher.jpg" alt="" loading="lazy"><img src="assets/covers/2024/supercommunicators-by-charles-duhigg.jpg" alt="" loading="lazy"><img src="assets/covers/2024/negotiating-while-black-by-damali-peterman.jpg" alt="" loading="lazy"></div>
+        <div class="bb-covers"><img src="assets/covers/2025/talk-to-me-nice-by-minda-harts.jpg" alt="" loading="lazy"><img src="assets/covers/2025/the-future-of-storytelling-by-charles-melcher.jpg" alt="" loading="lazy"><img src="assets/covers/2024/supercommunicators-by-charles-duhigg.jpg" alt="" loading="lazy"><img src="assets/covers/2024/negotiating-while-black-by-damali-peterman.jpg" alt="" loading="lazy"><img src="assets/covers/2023/MagicWords.jpg" alt="" loading="lazy"><img src="assets/covers/2023/WinEveryArgument.jpg" alt="" loading="lazy"><img src="assets/covers/2022/good-arguments-by-bo-seo.jpg" alt="" loading="lazy"></div>
         <h3>Best Books On Communication & Storytelling</h3>
         <p class="bb-blurb">The best books we have honored on talking, writing, listening, arguing and telling stories people remember.</p>
         <span class="bb-more">16 books &middot; See The List &#8594;</span>
       </a>
       <a class="bb-card" style="--c:var(--magenta)" href="best-psychology-books.html">
-        <div class="bb-covers"><img src="assets/covers/2025/a-trick-of-the-mind-by-daniel-yon.jpg" alt="" loading="lazy"><img src="assets/covers/2025/read-your-mind-by-oz-pearlman.jpg" alt="" loading="lazy"><img src="assets/covers/2024/the-age-of-magical-overthinking-by-amanda-montell.jpg" alt="" loading="lazy"><img src="assets/covers/2024/look-again-by-tali-sharot-and-cass-r-sunstein.jpg" alt="" loading="lazy"></div>
+        <div class="bb-covers"><img src="assets/covers/2025/a-trick-of-the-mind-by-daniel-yon.jpg" alt="" loading="lazy"><img src="assets/covers/2025/read-your-mind-by-oz-pearlman.jpg" alt="" loading="lazy"><img src="assets/covers/2024/the-age-of-magical-overthinking-by-amanda-montell.jpg" alt="" loading="lazy"><img src="assets/covers/2024/look-again-by-tali-sharot-and-cass-r-sunstein.jpg" alt="" loading="lazy"><img src="assets/covers/2023/YourBrainonArt.jpg" alt="" loading="lazy"><img src="assets/covers/2023/ClearThinking.jpg" alt="" loading="lazy"><img src="assets/covers/2022/stolen-focus-by-johann-hari.jpg" alt="" loading="lazy"></div>
         <h3>Best Books On Psychology & Human Behavior</h3>
         <p class="bb-blurb">Why we think what we think and do what we do: the best books on the strange workings of the human mind.</p>
         <span class="bb-more">16 books &middot; See The List &#8594;</span>
       </a>
       <a class="bb-card" style="--c:var(--lime)" href="best-books-south-asian-authors.html">
-        <div class="bb-covers"><img src="assets/covers/2018/belong-by-radha-agrawal.jpg" alt="" loading="lazy"><img src="assets/covers/2024/nuts-and-bolts-by-roma-agrawal.jpg" alt="" loading="lazy"><img src="assets/covers/2022/go-back-to-where-you-came-from-by-wajahat-ali.jpg" alt="" loading="lazy"><img src="assets/covers/2024/how-to-win-friends-and-influence-fungi-by-chris-balakrishnan.jpg" alt="" loading="lazy"></div>
+        <div class="bb-covers"><img src="assets/covers/2018/belong-by-radha-agrawal.jpg" alt="" loading="lazy"><img src="assets/covers/2024/nuts-and-bolts-by-roma-agrawal.jpg" alt="" loading="lazy"><img src="assets/covers/2022/go-back-to-where-you-came-from-by-wajahat-ali.jpg" alt="" loading="lazy"><img src="assets/covers/2024/how-to-win-friends-and-influence-fungi-by-chris-balakrishnan.jpg" alt="" loading="lazy"><img src="assets/covers/2022/the-titanium-economy-by-asutosh-padhi-and-gaurav-batra.jpg" alt="" loading="lazy"><img src="assets/covers/ideapress/nonobviousthinking.jpg" alt="" loading="lazy"><img src="assets/covers/2025/the-5-types-of-wealth-by-sahil-bloom.jpg" alt="" loading="lazy"></div>
         <h3>Best Books From South Asian Authors</h3>
         <p class="bb-blurb">Award-winning books from an extraordinary group of South Asian authors honored across our first decade.</p>
         <span class="bb-more">51 books &middot; See The List &#8594;</span>
@@ -511,7 +500,7 @@
   </div>
 </section>
 
-<div class="wave" style="background:#005E8C" aria-hidden="true"><svg viewBox="0 0 1440 48" preserveAspectRatio="none"><path fill="#FBF8F1" d="M0,26 C240,46 480,6 720,24 C960,42 1200,10 1440,26 L1440,0 L0,0 Z"/></svg></div>
+<div class="wave" style="background:#005E8C" aria-hidden="true"><svg viewBox="0 0 1440 48" preserveAspectRatio="none"><path fill="#ffffff" d="M0,26 C240,46 480,6 720,24 C960,42 1200,10 1440,26 L1440,0 L0,0 Z"/></svg></div>
 
 <!-- NEWSLETTER -->
 <section class="news">
@@ -541,8 +530,8 @@
       <ul>
         <li><a href="about.html">About the Awards</a></li>
         <li><a href="enter.html">How to Enter</a></li>
-        <li><a href="past-winners.html">Past Winners</a></li>
-        <li><a href="best-books.html">Best Books Roundups</a></li>
+        <li><a href="past-winners.html">The Winners</a></li>
+        <li><a href="best-books.html">Reading Lists</a></li>
         <li><a href="faq.html">FAQ</a></li>
         <li><a href="podcast.html">Podcast</a></li>
       </ul>

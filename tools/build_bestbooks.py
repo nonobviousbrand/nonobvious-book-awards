@@ -32,7 +32,7 @@ TOPIC_LISTS = [
 
 def card(slug, accent, name, blurb):
     s = open(os.path.join(SITE, slug)).read()
-    covers = re.findall(r'<div class="ru-cover"><a[^>]*><img src="([^"]+)"', s)[:4]
+    covers = re.findall(r'<div class="ru-cover"><a[^>]*><img src="([^"]+)"', s)[:7]
     count = len(re.findall(r'<div class="ru-row">', s))
     covs = ''.join(f'<img src="{c}" alt="" loading="lazy">' for c in covers)
     return f'''      <a class="bb-card" style="--c:var(--{accent})" href="{slug}">
@@ -69,8 +69,8 @@ extra_css = """
   .bb-grid{max-width:1140px;margin:56px auto 0;display:grid;grid-template-columns:repeat(2,1fr);gap:38px;}
   .bb-card{display:block;text-decoration:none;color:var(--ink);background:var(--white);border:3px solid var(--black);border-top:10px solid var(--c);padding:28px 30px 26px;box-shadow:10px 10px 0 rgba(0,0,0,.12);transition:transform .18s,box-shadow .18s;}
   .bb-card:hover{transform:translate(-3px,-3px);box-shadow:14px 14px 0 rgba(0,0,0,.16);}
-  .bb-covers{display:flex;gap:10px;margin-bottom:20px;}
-  .bb-covers img{width:64px;aspect-ratio:2/3;object-fit:cover;box-shadow:0 8px 16px rgba(0,0,0,.2);}
+  .bb-covers{display:flex;gap:8px;margin-bottom:20px;flex-wrap:wrap;}
+  .bb-covers img{width:60px;aspect-ratio:2/3;object-fit:cover;box-shadow:0 8px 16px rgba(0,0,0,.2);}
   .bb-card h3{font-family:var(--disp);font-weight:900;font-size:1.35rem;line-height:1.2;margin-bottom:10px;text-transform:uppercase;}
   .bb-blurb{font-family:var(--serif);font-size:.98rem;line-height:1.7;color:#444;}
   .bb-more{display:inline-block;margin-top:16px;font-family:var(--disp);font-weight:800;font-size:.78rem;letter-spacing:.05em;text-transform:uppercase;border-bottom:3px solid var(--c);padding-bottom:3px;}
@@ -127,7 +127,7 @@ page = f'''<!DOCTYPE html>
     <div>
       <div class="divider"></div>
       <p class="kicker">Curated Reading Lists</p>
-      <h1>The Best Books.<br>By Every Measure.</h1>
+      <h1>The Best Books. <br>By Every Measure.</h1>
       <p class="sub">Fifteen reading lists drawn from more than 800 books honored across a decade of the Non-Obvious Book Awards: by award, by topic, and by the voices behind them.</p>
     </div>
     <div class="hero-stamp">
@@ -138,33 +138,15 @@ page = f'''<!DOCTYPE html>
 
 {wave(YEL, WHT)}
 
-<!-- BY AWARD -->
+<!-- ALL LISTS -->
 <section style="background:var(--white)">
-  <div class="bb-head">
-    <div class="divider"></div>
-    <p class="kicker">By Award Category</p>
-    <h2>A decade of winners,<br>five ways.</h2>
-  </div>
-  <div class="bb-grid">
+  <div class="bb-grid" style="margin-top:0">
 {award_cards}
-  </div>
-</section>
-
-{wave(WHT, CRM)}
-
-<!-- BY TOPIC -->
-<section style="background:var(--cream)">
-  <div class="bb-head">
-    <div class="divider"></div>
-    <p class="kicker">By Topic &amp; Voice</p>
-    <h2>Reading lists for<br>every curiosity.</h2>
-  </div>
-  <div class="bb-grid">
 {topic_cards}
   </div>
 </section>
 
-{wave(CRM, '#005E8C')}
+{wave(WHT, '#005E8C')}
 
 {footer}
 

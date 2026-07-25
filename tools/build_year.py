@@ -370,7 +370,7 @@ if TRENDS_GROUPED:
   <div class="wrap">
     <div class="divider"></div>
     <p class="kicker">The Biggest Book Trends of {YEAR_LABEL}</p>
-    <h2>Six macro trends.<br>Eighteen micro-trends.</h2>
+    <h2>Six macro trends. <br>Eighteen micro-trends.</h2>
     <p class="lede">{esc(TRENDS_INTRO)}</p>
 {grouped_html}{trends_link}
   </div>
@@ -389,7 +389,7 @@ elif TRENDS:
   <div class="wrap">
     <div class="divider"></div>
     <p class="kicker">The Biggest Book Trends of {YEAR_LABEL}</p>
-    <h2>What the year's books<br>were really about.</h2>
+    <h2>What the year's books <br>were really about.</h2>
     <p class="lede">{esc(TRENDS_INTRO)}</p>
     <div class="{TREND_GRID_CLASS}">
 {chr(10).join(trend_cards)}
@@ -460,7 +460,7 @@ page = f'''<!DOCTYPE html>
     <div>
       <div class="divider"></div>
       <p class="kicker">The Award Archive</p>
-      <h1>The {YEAR_LABEL}<br>Book Awards</h1>
+      <h1>The {YEAR_LABEL} <br>Book Awards</h1>
       <p class="sub">{HERO_SUB or f"Five winners, ten shortlist selections and a longlist of the year's best non-fiction books — chosen from more than 1,000 entries and announced live in December {YEAR_LABEL}."}</p>
       {f'<p class="hero-themes">{HERO_THEMES}</p>' if HERO_THEMES else ''}
       <div class="year-pager">
@@ -486,7 +486,7 @@ page = f'''<!DOCTYPE html>
       <div>
         <div class="divider"></div>
         <p class="kicker">The {YEAR_LABEL} Winners</p>
-        <h2>The Best Non-Obvious<br>Books of the Year</h2>
+        <h2>The Best Non-Obvious <br>Books of the Year</h2>
       </div>
     </div>
     {WINNERS_BODY}

@@ -137,6 +137,9 @@
   /* ---------- How it works ---------- */
   .how{background:var(--cream);}
   .how-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:44px;margin-top:64px;}
+  .how-cols{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center;}
+  .how-vidcap{font-family:var(--serif);font-style:italic;font-size:.9rem;color:#777;margin-top:14px;text-align:center;}
+  @media(max-width:900px){.how-cols{grid-template-columns:1fr;gap:32px;}}
   .step{border-top:8px solid var(--black);padding-top:28px;}
   .step:nth-child(1){border-color:var(--blue);}
   .step:nth-child(2){border-color:var(--teal);}
@@ -284,6 +287,10 @@
     .hamburger{display:block;}
     nav.open .nav-links{display:flex;flex-direction:column;align-items:flex-start;gap:18px;position:absolute;top:100%;left:0;right:0;background:var(--white);padding:20px 32px 28px;border-bottom:1px solid rgba(0,0,0,.08);box-shadow:0 18px 28px rgba(0,0,0,.10);}
     nav .nav-inner{position:relative;}
+  }
+  h1, h2{text-wrap:balance;}
+  @media(max-width:640px){
+    h1 br, h2 br{display:none;}
   }
   @media(max-width:560px){
     section{padding:44px 20px;}
@@ -458,12 +465,12 @@
   <div class="nav-inner">
     <a class="nav-logo" href="index.html">
       <img src="assets/badges/web/seal-gold.png" alt="The Non-Obvious Book Award seal">
-      <span class="wordmark">NON-OBVIOUS<br>BOOK AWARDS</span>
+      <span class="wordmark">NON-OBVIOUS <br>BOOK AWARDS</span>
     </a>
     <ul class="nav-links">
       <li><a href="about.html">About</a></li>
-      <li><a href="past-winners.html">Past Winners</a></li>
-        <li><a href="best-books.html">Best Books</a></li>
+      <li><a href="past-winners.html">The Winners</a></li>
+        <li><a href="best-books.html">Reading Lists</a></li>
       <li><a href="podcast.html">Podcast</a></li>
       <li><a href="faq.html">FAQ</a></li>
       <li><a href="enter.html" class="nav-cta">Enter the 2026 Awards</a></li>
@@ -478,7 +485,7 @@
     <div>
       <div class="divider"></div>
       <p class="kicker">The Award Archive</p>
-      <h1>The 2019<br>Book Awards</h1>
+      <h1>The 2019 <br>Book Awards</h1>
       <p class="sub">An extremely competitive year with more books submitted and considered than any previous year — five winners, ten shortlist selections and a longlist of the best non-fiction books of 2019.</p>
       <p class="hero-themes">Every year we select less than 10% of all the books we review to be included in our Non-Obvious Book Awards Longlist or Shortlist.</p>
       <div class="year-pager">
@@ -504,7 +511,7 @@
       <div>
         <div class="divider"></div>
         <p class="kicker">The 2019 Winners</p>
-        <h2>The Best Non-Obvious<br>Books of the Year</h2>
+        <h2>The Best Non-Obvious <br>Books of the Year</h2>
       </div>
     </div>
     <div class="win-rows">      <div class="win-row">
@@ -744,8 +751,8 @@
       <ul>
         <li><a href="about.html">About the Awards</a></li>
         <li><a href="enter.html">How to Enter</a></li>
-        <li><a href="past-winners.html">Past Winners</a></li>
-        <li><a href="best-books.html">Best Books Roundups</a></li>
+        <li><a href="past-winners.html">The Winners</a></li>
+        <li><a href="best-books.html">Reading Lists</a></li>
         <li><a href="faq.html">FAQ</a></li>
         <li><a href="podcast.html">Podcast</a></li>
       </ul>

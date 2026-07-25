@@ -25,7 +25,7 @@ TOPICS = {
         'slug': 'most-useful-books.html',
         'cat_match': 'useful',
         'kicker': 'Award Winner Roundups',
-        'h1': 'The Most Useful<br>Business Books Of<br>The Past Decade',
+        'h1': 'The Most Useful <br>Business Books Of <br>The Past Decade',
         'title': 'The Most Useful Business Books of the Past Decade | Non-Obvious Book Awards',
         'meta': ('The most useful business and non-fiction books of the past decade — every winner of the '
                  'Most Useful Book award from the Non-Obvious Book Awards, 2014 to today.'),
@@ -53,7 +53,7 @@ TOPICS = {
         'slug': 'most-important-books.html',
         'cat_match': 'important',
         'kicker': 'Award Winner Roundups',
-        'h1': 'The Most Important<br>Non-Fiction Books<br>Of The Past Decade',
+        'h1': 'The Most Important <br>Non-Fiction Books <br>Of The Past Decade',
         'title': 'The Most Important Non-Fiction Books of the Past Decade | Non-Obvious Book Awards',
         'meta': ('The most important non-fiction and business books of the past decade — every winner of the '
                  'Most Important Book award from the Non-Obvious Book Awards, 2014 to today.'),
@@ -81,7 +81,7 @@ TOPICS = {
         'slug': 'most-original-books.html',
         'cat_match': 'original',
         'kicker': 'Award Winner Roundups',
-        'h1': 'The Most Original<br>Non-Fiction Books<br>Of The Past Decade',
+        'h1': 'The Most Original <br>Non-Fiction Books <br>Of The Past Decade',
         'title': 'The Most Original Non-Fiction Books of the Past Decade | Non-Obvious Book Awards',
         'meta': ('The most original non-fiction books of the past decade — every winner of the Most Original '
                  'Book award from the Non-Obvious Book Awards, 2014 to today.'),
@@ -109,7 +109,7 @@ TOPICS = {
         'slug': 'most-entertaining-books.html',
         'cat_match': 'entertaining',
         'kicker': 'Award Winner Roundups',
-        'h1': 'The Most Entertaining<br>Non-Fiction Books<br>Of The Past Decade',
+        'h1': 'The Most Entertaining <br>Non-Fiction Books <br>Of The Past Decade',
         'title': 'The Most Entertaining Non-Fiction Books of the Past Decade | Non-Obvious Book Awards',
         'meta': ('The most entertaining non-fiction books of the past decade — every winner of the Most '
                  'Entertaining Book award from the Non-Obvious Book Awards, 2014 to today.'),
@@ -136,7 +136,7 @@ TOPICS = {
         'slug': 'most-shareable-books.html',
         'cat_match': 'shareable',
         'kicker': 'Award Winner Roundups',
-        'h1': 'The Most Shareable<br>Non-Fiction Books<br>Of The Past Decade',
+        'h1': 'The Most Shareable <br>Non-Fiction Books <br>Of The Past Decade',
         'title': 'The Most Shareable Non-Fiction Books of the Past Decade | Non-Obvious Book Awards',
         'meta': ('The most shareable non-fiction books of the past decade — every winner of the Most Shareable '
                  'Book award from the Non-Obvious Book Awards, 2014 to today.'),
@@ -245,7 +245,7 @@ def build(topic_key):
   /* ---------- Topic roundup page ---------- */
   .topic-hero{background:var(--yellow);padding:120px 6vw 90px;}
   .topic-hero-inner{max-width:1140px;margin:0 auto;display:grid;grid-template-columns:1.3fr .7fr;gap:60px;align-items:center;}
-  .topic-hero h1{font-size:clamp(2.3rem,4.6vw,3.7rem);line-height:1.06;text-transform:uppercase;font-weight:900;}
+  .topic-hero h1{font-size:clamp(2.1rem,4.1vw,3.3rem);line-height:1.06;text-transform:uppercase;font-weight:900;}
   .topic-hero .sub{font-family:var(--serif);font-style:italic;font-size:1.18rem;line-height:1.7;margin-top:24px;max-width:600px;}
   .hero-disclaimer{font-size:.82rem;color:#6b5a10;margin-top:18px;max-width:560px;line-height:1.6;}
   .topic-hero .hero-stamp img{width:100%;max-width:240px;transform:none;filter:drop-shadow(0 18px 32px rgba(0,0,0,.16));margin:0 auto;display:block;}

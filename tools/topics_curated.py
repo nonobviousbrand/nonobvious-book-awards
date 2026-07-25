@@ -7,7 +7,7 @@ CURATED = {
     'entrepreneurs': {
         'slug': 'best-books-for-entrepreneurs.html',
         'kicker': K,
-        'h1': 'The Best Books For<br>Entrepreneurs Of<br>The Past Decade',
+        'h1': 'The Best Books For <br>Entrepreneurs Of <br>The Past Decade',
         'title': 'The Best Books For Entrepreneurs of the Past Decade | Non-Obvious Book Awards',
         'meta': ('The best books for entrepreneurs and startup founders of the past decade — chosen from more '
                  'than 800 books honored by the Non-Obvious Book Awards since 2014.'),
@@ -49,7 +49,7 @@ CURATED = {
     'ai': {
         'slug': 'best-ai-books.html',
         'kicker': K,
-        'h1': 'The Best Books On<br>Artificial<br>Intelligence',
+        'h1': 'The Best Books On <br>Artificial <br>Intelligence',
         'title': 'The Best Books On Artificial Intelligence | Non-Obvious Book Awards',
         'meta': ('The best books on artificial intelligence — the AI books honored by the Non-Obvious Book '
                  'Awards, from AI Superpowers to Brave New Words, chosen from 800+ award entries.'),
@@ -93,7 +93,7 @@ CURATED = {
     'marketing': {
         'slug': 'best-marketing-books.html',
         'kicker': K,
-        'h1': 'The Best Marketing<br>Books Of The<br>Past Decade',
+        'h1': 'The Best Marketing <br>Books Of The <br>Past Decade',
         'title': 'The Best Marketing Books of the Past Decade | Non-Obvious Book Awards',
         'meta': ('The best marketing books of the past decade — the marketing, branding and persuasion books '
                  'honored by the Non-Obvious Book Awards since 2014.'),
@@ -141,7 +141,7 @@ CURATED = {
     'productivity': {
         'slug': 'best-productivity-books.html',
         'kicker': K,
-        'h1': 'The Best Productivity<br>Books Of The<br>Past Decade',
+        'h1': 'The Best Productivity <br>Books Of The <br>Past Decade',
         'title': 'The Best Productivity Books of the Past Decade | Non-Obvious Book Awards',
         'meta': ('The best productivity books of the past decade — the books on habits, focus and getting '
                  'things done honored by the Non-Obvious Book Awards since 2014.'),
@@ -185,7 +185,7 @@ CURATED = {
     'memoirs': {
         'slug': 'best-business-memoirs.html',
         'kicker': K,
-        'h1': 'The Best Business<br>Memoirs Of The<br>Past Decade',
+        'h1': 'The Best Business <br>Memoirs Of The <br>Past Decade',
         'title': 'The Best Business Memoirs of the Past Decade | Non-Obvious Book Awards',
         'meta': ('The best business memoirs of the past decade — first-person stories from founders and CEOs '
                  'honored by the Non-Obvious Book Awards since 2014.'),
@@ -231,7 +231,7 @@ CURATED = {
 CURATED['southasian'] = {
     'slug': 'best-books-south-asian-authors.html',
     'kicker': 'Best Books Roundups',
-    'h1': 'Best Award Winning<br>Business Books From<br>South Asian Authors',
+    'h1': 'Best Award Winning <br>Business Books From <br>South Asian Authors',
     'title': 'Best Award Winning Business Books From South Asian Authors | Non-Obvious Book Awards',
     'meta': ('The best award-winning business and non-fiction books by South Asian authors, honored by the '
              'Non-Obvious Book Awards since 2014, listed alphabetically by author.'),
@@ -350,7 +350,7 @@ CURATED['southasian'] = {
 CURATED['creativity'] = {
     'slug': 'best-creativity-books.html',
     'kicker': K,
-    'h1': 'The Best Books On<br>Creativity &amp;<br>Innovation',
+    'h1': 'The Best Books On <br>Creativity &amp; <br>Innovation',
     'title': 'The Best Books On Creativity & Innovation | Non-Obvious Book Awards',
     'meta': ('The best books on creativity and innovation of the past decade — chosen from more than 800 '
              'books honored by the Non-Obvious Book Awards since 2014.'),
@@ -400,7 +400,7 @@ CURATED['creativity'] = {
 CURATED['leadership'] = {
     'slug': 'best-leadership-books.html',
     'kicker': K,
-    'h1': 'The Best Leadership<br>Books Of The<br>Past Decade',
+    'h1': 'The Best Leadership <br>Books Of The <br>Past Decade',
     'title': 'The Best Leadership Books Of The Past Decade | Non-Obvious Book Awards',
     'meta': ('The best leadership books of the past decade — chosen from more than 800 books honored by '
              'the Non-Obvious Book Awards since 2014.'),
@@ -448,7 +448,7 @@ CURATED['leadership'] = {
 CURATED['communication'] = {
     'slug': 'best-communication-books.html',
     'kicker': K,
-    'h1': 'The Best Books On<br>Communication &amp;<br>Storytelling',
+    'h1': 'The Best Books On <br>Communication &amp; <br>Storytelling',
     'title': 'The Best Books On Communication & Storytelling | Non-Obvious Book Awards',
     'meta': ('The best books on communication, storytelling, persuasion and public speaking — chosen from '
              'more than 800 books honored by the Non-Obvious Book Awards since 2014.'),
@@ -497,7 +497,7 @@ CURATED['communication'] = {
 CURATED['psychology'] = {
     'slug': 'best-psychology-books.html',
     'kicker': K,
-    'h1': 'The Best Books On<br>Psychology &amp; Human<br>Behavior',
+    'h1': 'The Best Books On <br>Psychology &amp; Human <br>Behavior',
     'title': 'The Best Books On Psychology & Human Behavior | Non-Obvious Book Awards',
     'meta': ('The best books on psychology and human behavior — chosen from more than 800 books honored '
              'by the Non-Obvious Book Awards since 2014, from Atomic Habits to Stolen Focus.'),

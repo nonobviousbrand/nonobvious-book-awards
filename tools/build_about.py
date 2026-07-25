@@ -69,6 +69,9 @@ extra_css = """
   @media(max-width:980px){.steps-grid{grid-template-columns:1fr;}.founder-inner{grid-template-columns:1fr;gap:40px;}.founder-photo{max-width:340px;}}
   @media(max-width:860px){.about-hero-inner{grid-template-columns:1fr;}.about-hero .hero-stamp{display:none;}}
   @media(max-width:560px){.founder-photo{max-width:230px;}}
+  .phil-cols{max-width:1140px;margin:0 auto;display:grid;grid-template-columns:1.02fr .98fr;gap:60px;align-items:center;}
+  .phil-vidcap{font-family:var(--serif);font-style:italic;font-size:.9rem;color:#777;margin-top:14px;text-align:center;}
+  @media(max-width:900px){.phil-cols{grid-template-columns:1fr;gap:36px;}}
 """
 
 # publisher logo mosaic (featured logos first, larger)
@@ -129,7 +132,7 @@ page = f"""<!DOCTYPE html>
     <div>
       <div class="divider"></div>
       <p class="kicker">About The Awards</p>
-      <h1>We Curate The Best<br>Non-Fiction Books<br>Of The Year.</h1>
+      <h1>We Curate The Best <br>Non-Fiction Books <br>Of The Year.</h1>
       <p class="sub">The Non-Obvious Book Awards are curated, judged and created for people who love books. Especially non-fiction books.</p>
     </div>
     <div class="hero-stamp">
@@ -140,30 +143,20 @@ page = f"""<!DOCTYPE html>
 
 {wave(YEL, WHT)}
 
-<!-- BELIEF -->
-<section style="background:#fff">
-  <div class="wrap">
-    <div class="belief">
+<!-- PHILOSOPHY + VIDEO -->
+<section style="background:#fff" id="video">
+  <div class="phil-cols">
+    <div>
       <div class="divider"></div>
       <p class="kicker">Our Philosophy</p>
-      <h2 style="margin-bottom:26px">We believe in the power of books.</h2>
-      <p>Unlike other industry awards programs, books are not entered into predefined categories and authors or publishers are not charged a fee to enter a book. Rather than creating a profit-making venture, we focus on selecting the very best books of the year and sharing them with our global audience.</p>
-      <div class="pull">The Non-Obvious Book Awards are curated, judged and created for people who love books. Especially non-fiction books.</div>
+      <h2 style="margin-bottom:22px">We believe the world would be better if people read more business books.</h2>
+      <div class="pull" style="margin-top:26px">Curating and celebrating the best business books for over ten years.</div>
     </div>
-  </div>
-</section>
-
-<!-- FOUNDER VIDEO -->
-<section class="video" id="video" style="background:#fff;padding-top:0">
-  <div class="wrap" style="padding-top:0">
-    <div class="head">
-      <div class="divider"></div>
-      <p class="kicker">A Welcome From Our Founder</p>
-      <h2>Did you write a book this year?</h2>
-      <p class="lede">Watch this short message about the awards from our founder Rohit Bhargava, on what makes these awards different &mdash; and why you should enter your book for the 2026 competition!</p>
-    </div>
-    <div class="video-frame">
-      <iframe src="https://www.youtube.com/embed/JCsdBrvhodI" title="A welcome from Rohit Bhargava — Non-Obvious Book Awards 2026" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <div class="phil-video">
+      <div class="video-frame" style="margin:0;max-width:none">
+        <iframe src="https://www.youtube.com/embed/JCsdBrvhodI" title="A welcome from Rohit Bhargava — Non-Obvious Book Awards 2026" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <p class="phil-vidcap">A welcome from our founder, Rohit Bhargava</p>
     </div>
   </div>
 </section>
@@ -176,7 +169,8 @@ page = f"""<!DOCTYPE html>
     <div class="head" style="text-align:center;display:flex;flex-direction:column;align-items:center;">
       <div class="divider"></div>
       <p class="kicker">How The Awards Work</p>
-      <h2>From Hundreds Of Books To Five Winners</h2>
+      <h2>Curating The Best Books From Thousands Of Submissions</h2>
+      <p class="lede" style="text-align:center;max-width:760px">Unlike other industry awards programs, books are not entered into predefined categories and authors or publishers are not charged a fee to enter a book. Rather than creating a profit-making venture, we focus on selecting the very best books of the year and sharing them with our global audience.</p>
     </div>
     <div class="steps-grid">
       <div class="step">
@@ -258,6 +252,7 @@ page = f"""<!DOCTYPE html>
       <p>Rohit Bhargava is on a mission to inspire more non-obvious thinking. He is the 3-time Wall Street Journal and USA Today bestselling author of ten books and is widely considered one of the most entertaining and original speakers on trends, innovation and marketing in the world.</p>
       <p>Rohit has shared the stage with big personalities like Jay Leno, Elon Musk and will.i.am and been invited to deliver &ldquo;non-boring&rdquo; keynotes and workshops in 32 countries around the world to change the way teams and leaders think at the World Bank, NASA, Intel, LinkedIn, Coca-Cola, Disney and hundreds of other well-known organizations. Prior to becoming an entrepreneur and founding the Non-Obvious Company and Ideapress Publishing, he spent 15 years leading marketing strategy at Ogilvy and Leo Burnett where he advised global brands on human behavior, marketing and storytelling.</p>
       <p>Outside his speaking and consulting, Rohit has taught persuasive speaking and global marketing as an adjunct professor at Georgetown University, is frequently quoted in the global media and has written for Inc, Entrepreneur and GQ magazines. Rohit lives in the Washington DC area with his wife and is a proud dad of two boys. He loves the Olympics (he's been to six!) and actively hates cauliflower.</p>
+      <a class="btn btn-dark" style="margin-top:26px" href="https://www.rohitbhargava.com/about" target="_blank">Learn More About Rohit &#8594;</a>
     </div>
   </div>
 </section>

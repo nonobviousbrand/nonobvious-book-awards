@@ -137,6 +137,9 @@
   /* ---------- How it works ---------- */
   .how{background:var(--cream);}
   .how-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:44px;margin-top:64px;}
+  .how-cols{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center;}
+  .how-vidcap{font-family:var(--serif);font-style:italic;font-size:.9rem;color:#777;margin-top:14px;text-align:center;}
+  @media(max-width:900px){.how-cols{grid-template-columns:1fr;gap:32px;}}
   .step{border-top:8px solid var(--black);padding-top:28px;}
   .step:nth-child(1){border-color:var(--blue);}
   .step:nth-child(2){border-color:var(--teal);}
@@ -285,6 +288,10 @@
     nav.open .nav-links{display:flex;flex-direction:column;align-items:flex-start;gap:18px;position:absolute;top:100%;left:0;right:0;background:var(--white);padding:20px 32px 28px;border-bottom:1px solid rgba(0,0,0,.08);box-shadow:0 18px 28px rgba(0,0,0,.10);}
     nav .nav-inner{position:relative;}
   }
+  h1, h2{text-wrap:balance;}
+  @media(max-width:640px){
+    h1 br, h2 br{display:none;}
+  }
   @media(max-width:560px){
     section{padding:44px 20px;}
     .cat-grid{grid-template-columns:repeat(2,1fr);gap:22px;margin-top:36px;row-gap:34px;}
@@ -323,7 +330,7 @@
   /* ---------- Topic roundup page ---------- */
   .topic-hero{background:var(--yellow);padding:120px 6vw 90px;}
   .topic-hero-inner{max-width:1140px;margin:0 auto;display:grid;grid-template-columns:1.3fr .7fr;gap:60px;align-items:center;}
-  .topic-hero h1{font-size:clamp(2.3rem,4.6vw,3.7rem);line-height:1.06;text-transform:uppercase;font-weight:900;}
+  .topic-hero h1{font-size:clamp(2.1rem,4.1vw,3.3rem);line-height:1.06;text-transform:uppercase;font-weight:900;}
   .topic-hero .sub{font-family:var(--serif);font-style:italic;font-size:1.18rem;line-height:1.7;margin-top:24px;max-width:600px;}
   .hero-disclaimer{font-size:.82rem;color:#6b5a10;margin-top:18px;max-width:560px;line-height:1.6;}
   .topic-hero .hero-stamp img{width:100%;max-width:240px;transform:none;filter:drop-shadow(0 18px 32px rgba(0,0,0,.16));margin:0 auto;display:block;}
@@ -377,12 +384,12 @@
   <div class="nav-inner">
     <a class="nav-logo" href="index.html">
       <img src="assets/badges/web/seal-gold.png" alt="The Non-Obvious Book Award seal">
-      <span class="wordmark">NON-OBVIOUS<br>BOOK AWARDS</span>
+      <span class="wordmark">NON-OBVIOUS <br>BOOK AWARDS</span>
     </a>
     <ul class="nav-links">
       <li><a href="about.html">About</a></li>
-      <li><a href="past-winners.html">Past Winners</a></li>
-        <li><a href="best-books.html">Best Books</a></li>
+      <li><a href="past-winners.html">The Winners</a></li>
+        <li><a href="best-books.html">Reading Lists</a></li>
       <li><a href="podcast.html">Podcast</a></li>
       <li><a href="faq.html">FAQ</a></li>
       <li><a href="enter.html" class="nav-cta">Enter the 2026 Awards</a></li>
@@ -397,7 +404,7 @@
     <div>
       <div class="divider"></div>
       <p class="kicker">Award Winner Roundups</p>
-      <h1>The Most Original<br>Non-Fiction Books<br>Of The Past Decade</h1>
+      <h1>The Most Original <br>Non-Fiction Books <br>Of The Past Decade</h1>
       <p class="sub">Every year since 2014, the Non-Obvious Book Awards have honored one book as the <b>Most Original Book of the Year</b>: the book unlike anything else published that year, built on an idea we had simply never seen before. Collected here: every winner, in one definitive reading list.</p>
       <p class="hero-disclaimer">*This list does not include books published in 2026, which are currently under review as part of our 2026 awards program.</p>
     </div>
@@ -568,8 +575,8 @@
       <ul>
         <li><a href="about.html">About the Awards</a></li>
         <li><a href="enter.html">How to Enter</a></li>
-        <li><a href="past-winners.html">Past Winners</a></li>
-        <li><a href="best-books.html">Best Books Roundups</a></li>
+        <li><a href="past-winners.html">The Winners</a></li>
+        <li><a href="best-books.html">Reading Lists</a></li>
         <li><a href="faq.html">FAQ</a></li>
         <li><a href="podcast.html">Podcast</a></li>
       </ul>

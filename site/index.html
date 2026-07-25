@@ -137,6 +137,9 @@
   /* ---------- How it works ---------- */
   .how{background:var(--cream);}
   .how-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:44px;margin-top:64px;}
+  .how-cols{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center;}
+  .how-vidcap{font-family:var(--serif);font-style:italic;font-size:.9rem;color:#777;margin-top:14px;text-align:center;}
+  @media(max-width:900px){.how-cols{grid-template-columns:1fr;gap:32px;}}
   .step{border-top:8px solid var(--black);padding-top:28px;}
   .step:nth-child(1){border-color:var(--blue);}
   .step:nth-child(2){border-color:var(--teal);}
@@ -285,6 +288,10 @@
     nav.open .nav-links{display:flex;flex-direction:column;align-items:flex-start;gap:18px;position:absolute;top:100%;left:0;right:0;background:var(--white);padding:20px 32px 28px;border-bottom:1px solid rgba(0,0,0,.08);box-shadow:0 18px 28px rgba(0,0,0,.10);}
     nav .nav-inner{position:relative;}
   }
+  h1, h2{text-wrap:balance;}
+  @media(max-width:640px){
+    h1 br, h2 br{display:none;}
+  }
   @media(max-width:560px){
     section{padding:44px 20px;}
     .cat-grid{grid-template-columns:repeat(2,1fr);gap:22px;margin-top:36px;row-gap:34px;}
@@ -342,12 +349,12 @@
   <div class="nav-inner">
     <a class="nav-logo" href="#">
       <img src="assets/badges/web/seal-gold.png" alt="The Non-Obvious Book Award seal">
-      <span class="wordmark">NON-OBVIOUS<br>BOOK AWARDS</span>
+      <span class="wordmark">NON-OBVIOUS <br>BOOK AWARDS</span>
     </a>
     <ul class="nav-links">
       <li><a href="about.html">About</a></li>
-      <li><a href="past-winners.html">Past Winners</a></li>
-        <li><a href="best-books.html">Best Books</a></li>
+      <li><a href="past-winners.html">The Winners</a></li>
+        <li><a href="best-books.html">Reading Lists</a></li>
       <li><a href="podcast.html">Podcast</a></li>
       <li><a href="faq.html">FAQ</a></li>
       <li><a href="enter.html" class="nav-cta">Enter the 2026 Awards</a></li>
@@ -393,10 +400,20 @@
 <!-- CATEGORIES -->
 <section class="how" id="about">
   <div class="wrap">
-    <div class="divider"></div>
-    <p class="kicker">How It Works</p>
-    <h2>An award unlike any other.</h2>
-    <p class="lede">There are no predefined entry categories, no entry fees, and no pay-to-win. Every submitted book is actually reviewed by our team, and the best rise to the top — it's that simple.</p>
+    <div class="how-cols" id="video">
+      <div>
+        <div class="divider"></div>
+        <p class="kicker">How It Works</p>
+        <h2>An award unlike any other.</h2>
+        <p class="lede">There are no predefined entry categories, no entry fees, and no pay-to-win. Every submitted book is actually reviewed by our team, and the best rise to the top — it's that simple.</p>
+      </div>
+      <div>
+        <div class="video-frame" style="margin:0;max-width:none">
+          <iframe src="https://www.youtube.com/embed/JCsdBrvhodI" title="A welcome from Rohit Bhargava — Non-Obvious Book Awards 2026" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <p class="how-vidcap">A welcome from our founder, Rohit Bhargava</p>
+      </div>
+    </div>
     <div class="how-grid">
       <div class="step">
         <div class="n">Phase 01</div>
@@ -431,23 +448,23 @@
     <div class="cat-grid">
       <div class="cat">
         <img src="assets/badges/web/cat-original.png" alt="Winner — Most Original Book of the Year badge">
-        <div class="name">Most Original<br>Book of the Year</div><div class="bar" style="background:var(--blue)"></div>
+        <div class="name">Most Original <br>Book of the Year</div><div class="bar" style="background:var(--blue)"></div>
       </div>
       <div class="cat">
         <img src="assets/badges/web/cat-useful.png" alt="Winner — Most Useful Book of the Year badge">
-        <div class="name">Most Useful<br>Book of the Year</div><div class="bar" style="background:var(--teal)"></div>
+        <div class="name">Most Useful <br>Book of the Year</div><div class="bar" style="background:var(--teal)"></div>
       </div>
       <div class="cat">
         <img src="assets/badges/web/cat-entertaining.png" alt="Winner — Most Entertaining Book of the Year badge">
-        <div class="name">Most Entertaining<br>Book of the Year</div><div class="bar" style="background:var(--orange)"></div>
+        <div class="name">Most Entertaining <br>Book of the Year</div><div class="bar" style="background:var(--orange)"></div>
       </div>
       <div class="cat">
         <img src="assets/badges/web/cat-shareable.png" alt="Winner — Most Shareable Book of the Year badge">
-        <div class="name">Most Shareable<br>Book of the Year</div><div class="bar" style="background:var(--magenta)"></div>
+        <div class="name">Most Shareable <br>Book of the Year</div><div class="bar" style="background:var(--magenta)"></div>
       </div>
       <div class="cat">
         <img src="assets/badges/web/cat-important.png" alt="Winner — Most Important Book of the Year badge">
-        <div class="name">Most Important<br>Book of the Year</div><div class="bar" style="background:var(--purple)"></div>
+        <div class="name">Most Important <br>Book of the Year</div><div class="bar" style="background:var(--purple)"></div>
       </div>
     </div>
   </div>
@@ -466,7 +483,7 @@
   <div class="wrap">
     <div class="divider"></div>
     <p class="kicker" style="color:var(--yellow)">The Archive</p>
-    <h2>Ten years of the best<br>non-fiction books.</h2>
+    <h2>Ten years of the best <br>non-fiction books.</h2>
     <p class="lede" style="color:#c9c9c9">Every longlist, shortlist and winner since 2014 — a decade-long reading list of the books that mattered.</p>
     <div class="year-grid">
       <a class="year next" href="enter.html"><span class="y">2026</span><span class="t">Entries Now Open</span></a>
@@ -508,24 +525,6 @@
   </div>
 </section>
 
-<div class="wave" style="background:#FBF8F1" aria-hidden="true"><svg viewBox="0 0 1440 48" preserveAspectRatio="none"><path fill="#161616" d="M0,26 C240,46 480,6 720,24 C960,42 1200,10 1440,26 L1440,0 L0,0 Z"/></svg></div>
-
-<!-- FOUNDER VIDEO (seasonal: welcome/invitation now → judging update → winners announcement) -->
-<section class="video" id="video">
-  <div class="wrap">
-    <div class="head">
-      <div class="divider"></div>
-      <p class="kicker">An Invitation From Our Founder</p>
-      <h2>Did you write a book this year?</h2>
-      <p class="lede">Watch this short message about the awards from our founder Rohit Bhargava, on what makes these awards different — and why you should enter your book for the 2026 competition!</p>
-    </div>
-    <div class="video-frame">
-      <iframe src="https://www.youtube.com/embed/JCsdBrvhodI" title="A welcome from Rohit Bhargava — Non-Obvious Book Awards 2026" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
-  </div>
-</section>
-
-<div class="wave" style="background:#161616" aria-hidden="true"><svg viewBox="0 0 1440 48" preserveAspectRatio="none"><path fill="#FBF8F1" d="M0,26 C240,46 480,6 720,24 C960,42 1200,10 1440,26 L1440,0 L0,0 Z"/></svg></div>
 
 <!-- PODCAST PROMO -->
 <section class="podcast" id="podcast">
@@ -615,8 +614,8 @@
       <ul>
         <li><a href="about.html">About the Awards</a></li>
         <li><a href="enter.html">How to Enter</a></li>
-        <li><a href="past-winners.html">Past Winners</a></li>
-        <li><a href="best-books.html">Best Books Roundups</a></li>
+        <li><a href="past-winners.html">The Winners</a></li>
+        <li><a href="best-books.html">Reading Lists</a></li>
         <li><a href="faq.html">FAQ</a></li>
         <li><a href="podcast.html">Podcast</a></li>
       </ul>

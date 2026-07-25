@@ -153,7 +153,7 @@ page = f"""<!DOCTYPE html>
     <div>
       <div class="divider"></div>
       <p class="kicker">Good Questions, Non-Obvious Answers</p>
-      <h1>Frequently Asked<br>Questions</h1>
+      <h1>Frequently Asked <br>Questions</h1>
       <p class="sub">Thanks for your interest in our awards! Here are a few things we are commonly asked &mdash; along with some answers.</p>
     </div>
     <div class="hero-stamp">

@@ -149,7 +149,7 @@ page = f"""<!DOCTYPE html>
     <div>
       <div class="divider"></div>
       <p class="kicker">Be More Interesting</p>
-      <h1>The Non-Obvious<br>Show Podcast</h1>
+      <h1>The Non-Obvious <br>Show Podcast</h1>
       <p class="sub">Loved a book from our lists? Hear the story behind it. On The Non-Obvious Show, Rohit Bhargava sits down with the authors themselves &mdash; many drawn straight from the Book Awards longlist.</p>
     </div>
     <div class="pod-hero-art">
