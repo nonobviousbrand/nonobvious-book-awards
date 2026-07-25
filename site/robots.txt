@@ -1,0 +1,5 @@
+# The Non-Obvious Book Awards — all crawlers welcome, including AI assistants
+User-agent: *
+Allow: /
+
+Sitemap: https://www.nonobviousbookawards.com/sitemap.xml

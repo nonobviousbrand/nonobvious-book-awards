@@ -1,0 +1,9 @@
+# Netlify configuration for nonobviousbookawards.com
+[build]
+  publish = "site"
+  # No build command needed: the site/ folder contains the pre-built pages.
+
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
